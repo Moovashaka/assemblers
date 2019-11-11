@@ -1,23 +1,14 @@
 import React from 'react';
 import logo from './assemblerslogo.svg';
 import './App.css';
+import Navbar from './components/navigation/Navbar.js'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navbar />
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
       </header>
     </div>
   );
