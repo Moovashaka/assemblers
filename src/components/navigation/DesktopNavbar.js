@@ -16,6 +16,7 @@ color: white;
 const Img = styled.img `
    height: 20vmin;
    float: left;
+   margin: 5vmin;
 `
 
 const DesktopNavbar = () => {
