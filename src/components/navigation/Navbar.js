@@ -9,12 +9,18 @@ const MyNavbar = styled.div`
   justify-content: flex-start;
 `
 
-const Navbar = () => {
+class Navbar extends Component {
+
+    state= {
+      displayMobileNavbar: false
+    }
+    render() {
       return (
       <MyNavbar>
         <DesktopNavbar />
-         <MobileNavbar /> 
+         <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
       </MyNavbar>
     );
+    }
   }
 export default Navbar

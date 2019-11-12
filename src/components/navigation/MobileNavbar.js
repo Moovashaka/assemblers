@@ -10,6 +10,9 @@ background: ${ props => props.theme.primary };
 align-self: flex-end;
 box-shadow: -10px 10px 5px ${ props => props.theme.accent };
 
+transition: transform 1s;
+transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 15px)") });
+
 .nav-links {
   display: flex;
   flex-flow: column nowrap;
@@ -29,13 +32,11 @@ box-shadow: -10px 10px 5px ${ props => props.theme.accent };
 }
 `
 
-class MobileNavbar extends Component {
-  render() {
-    return (
-      <MyMobileNavBar>
+const MobileNavbar = props => {
+      return (
+      <MyMobileNavBar displayMobileNavbar = { props.displayMobileNavbar }>
       <Navlinks />
       </MyMobileNavBar>
     );
   }
-}
 export default MobileNavbar
