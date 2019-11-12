@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const MyNavbar = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
 
   overflow-x: hidden;
 `

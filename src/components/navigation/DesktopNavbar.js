@@ -70,22 +70,18 @@ const Logo = styled.img `
 `
 const MyMobileNavButton = styled.button`
   background: transparent;
-  border: none;
-  height: 5vh;
   display: none;
+  border-radius: 10px;
 
-  button:active {
+  &:focus {
+    background: rgba(0, 0, 0, 0.1);
     outline: none;
-    border: none;
-  }
+}
+
 
 
   @media screen and (max-width: 768px) {
       display: block
-}
-
-&:focus {
-  outline: none;
 }
 `
 const Icon = styled.img`
