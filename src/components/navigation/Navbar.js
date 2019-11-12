@@ -7,7 +7,6 @@ class Navbar extends Component {
     return (
       <div>
         <DesktopNavbar />
-        <MobileNavbar />
       </div>
     );
   }

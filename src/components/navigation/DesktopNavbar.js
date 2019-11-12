@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import logo from './assemblerslogo.svg'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import MobileNavbar from './MobileNavbar.js'
+
 
 
 const MyDesktopNavbar = styled.nav`
@@ -10,9 +12,8 @@ min-height: 30vh;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: top;
 font-size: calc(10px + 2vmin);
-color: white;
+/* color: white; */
 
 .nav-links {
   display: flex;
@@ -21,22 +22,18 @@ color: white;
   align-items: center;
 
   List-style:none;
-  
+
   width: 35vw;
 }
 
 .link {
   color: white;
   font-size: 2.5vh;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 `
-const MyMobileNavButton = styled.button`
-  background: transparent;
-  height: 6vh;
-
-`
-const Img = styled.img `
+const Logo = styled.img `
    height: 20vmin;
    float: left;
    margin: 5vmin;
@@ -45,7 +42,7 @@ const Img = styled.img `
 const DesktopNavbar = () => {
     return (
       <MyDesktopNavbar>
-      <Img src={logo} />
+      <Logo src={logo} />
       <ul className="nav-links">
           <li>
             <Link to="/" className="link"></Link>
@@ -60,8 +57,9 @@ const DesktopNavbar = () => {
             <Link to="/contact" className="link">Contact</Link>
           </li>
         </ul>
-
+        <MobileNavbar />
       </MyDesktopNavbar>
     );
   }
+
 export default DesktopNavbar
