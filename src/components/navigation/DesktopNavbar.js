@@ -73,10 +73,15 @@ const MyMobileNavButton = styled.button`
   border: none;
   height: 5vh;
   display: none;
-  outline: none;
+
+  button:active {
+    outline: none;
+    border: none;
+  }
+
 
   @media screen and (max-width: 768px) {
-      display: inline
+      display: block
 }
 
 &:focus {
@@ -84,11 +89,12 @@ const MyMobileNavButton = styled.button`
 }
 `
 const Icon = styled.img`
+
   background: none;
-  height: 5vh;
+  height: 8vh;
   border: none;
-  margin: 0.5rem;
-  padding 10px 10px;
+  align-self: flex-end;
+  opacity: 0.5;
 
   &:focus {
     outline:none;
