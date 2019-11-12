@@ -45,7 +45,9 @@ class Navbar extends Component {
     render() {
       return (
       <MyNavbar>
-        <DesktopNavbar toggleMobileNavbar = { this.toggleMobileNavbar } />
+        <DesktopNavbar
+          displayMobileNavbar = { this.state.displayMobileNavbar }
+          toggleMobileNavbar = { this.toggleMobileNavbar } />
          <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
       </MyNavbar>
     );
