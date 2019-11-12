@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import DesktopNavbar from './DesktopNavbar.js'
 import MobileNavbar from './MobileNavbar.js'
+import styled from 'styled-components'
 
-class Navbar extends Component {
-  render() {
-    return (
-      <div>
+const MyNavbar = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+`
+
+const Navbar = () => {
+      return (
+      <MyNavbar>
         <DesktopNavbar />
-      </div>
+         <MobileNavbar /> 
+      </MyNavbar>
     );
   }
-}
 export default Navbar
