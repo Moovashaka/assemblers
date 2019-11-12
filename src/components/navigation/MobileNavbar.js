@@ -7,6 +7,7 @@ const MyMobileNavBar = styled.nav`
 
 width: 50vw;
 background: ${ props => props.theme.primary };
+margin-bottom: 15px;
 align-self: flex-end;
 box-shadow: -10px 10px 5px ${ props => props.theme.accent };
 
@@ -35,7 +36,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
 const MobileNavbar = props => {
       return (
       <MyMobileNavBar displayMobileNavbar = { props.displayMobileNavbar }>
-      <Navlinks />
+      <Navlinks isMobileLink = { true } />
       </MyMobileNavBar>
     );
   }

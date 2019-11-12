@@ -34,7 +34,13 @@ box-shadow: -10px 10px 5px ${ props => props.theme.accent };
 }
 
 .link {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
   color: white;
+  text-shadow:  2px 2px 2px black;
   font-size: 2.5vh;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -60,12 +66,14 @@ const Icon = styled.img`
  height: 5vh;
  background: none;
 `
-const DesktopNavbar = () => {
+const DesktopNavbar = props => {
     return (
       <MyDesktopNavbar>
       <Logo src={logo} />
       <Navlinks />
-      <MyMobileNavButton>
+      <MyMobileNavButton
+          onClick = { props.toggleMobileNavbar }
+      >
       <Icon src={mobileNavIcon} alt = "The Assemblers Flatpack furniture assembly" />
       </MyMobileNavButton>
       </MyDesktopNavbar>
