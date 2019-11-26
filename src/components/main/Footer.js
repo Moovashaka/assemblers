@@ -9,10 +9,10 @@ align-items: center;
 height: 15vh;
 color: white;
 opacity: 1;
-background: ${ props => props.theme.primary };
+background: ${ props => props.theme.colors.navprimary };
 height: 20vh;
 text-align: center;
-box-shadow: 10px -10px 5px ${ props => props.theme.accent };
+box-shadow: 5px -5px 5px ${ props => props.theme.colors.navaccent };
 `
 
 const Footer = props => {

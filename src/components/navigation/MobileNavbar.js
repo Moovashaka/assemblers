@@ -6,10 +6,10 @@ import Navlinks from './Navlinks.js'
 const MyMobileNavBar = styled.nav`
 
 width: 50vw;
-background: ${ props => props.theme.primary };
+background: ${ props => props.theme.colors.navprimary };
 margin-bottom: 15px;
 align-self: flex-end;
-box-shadow: -10px 10px 5px ${ props => props.theme.accent };
+box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 
 transition: transform 1s;
 transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 15px)") });

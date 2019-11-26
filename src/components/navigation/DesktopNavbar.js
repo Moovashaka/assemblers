@@ -7,14 +7,14 @@ import mobileNavIcon from '../../images/mobileNavIcon.svg'
 
 
 const MyDesktopNavbar = styled.nav`
-background: ${ props => props.theme.primary };
+background: ${ props => props.theme.colors.navprimary };
 min-height: 30vh;
 display: flex;
 flex-direction: row;
 align-items: center;
 font-size: calc(10px + 2vmin);
 
-box-shadow: -10px 10px 5px ${ props => props.theme.accent };
+box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 /* color: white; */
 
 .nav-links {
@@ -67,6 +67,7 @@ const Logo = styled.img `
    height: 20vmin;
    float: left;
    margin: 5vmin;
+   box-shadow: -5px 5px 5px 5px ${ props => props.theme.navaccent }:
 `
 const MyMobileNavButton = styled.button`
   background: transparent;
