@@ -12,7 +12,7 @@ min-height: 30vh;
 display: flex;
 flex-direction: row;
 align-items: center;
-font-size: calc(10px + 2vmin);
+font-size: calc(10px + 3vmin);
 
 box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 /* color: white; */
@@ -21,7 +21,7 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: right;
 
   List-style:none;
 

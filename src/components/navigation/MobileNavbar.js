@@ -10,6 +10,7 @@ background: ${ props => props.theme.colors.navprimary };
 margin-bottom: 15px;
 align-self: flex-end;
 box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
+z-index: 1000;
 
 transition: transform 1s;
 transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 15px)") });

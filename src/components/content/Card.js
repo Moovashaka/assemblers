@@ -1,14 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { color } from 'styled-system'
+import { space, color, layout } from 'styled-system'
 
 const Col = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 250px;
-  margin: 0;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 10vh;
   padding: 20px 20px;
+  background: ${ props => props.theme.colors.black };
+  font-size: 1vw;
+
+  @media screen and (max-width:768px) {
+    display: block;
+    float: left;
+  };
 `;
 
 const Image = styled.img`
@@ -22,6 +30,7 @@ const Title = styled.h3`
 `;
 
 const Text = styled.p`
+
   color: white;
   margin: 0;
   padding: 0px 15px;
@@ -32,6 +41,9 @@ const Card = ({
   title,
   image,
   text,
+  color,
+  layout,
+  space,
   ...props
 }) => (
   <Col {...props}>

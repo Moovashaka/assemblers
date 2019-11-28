@@ -1,9 +1,14 @@
 import styled from 'styled-components'
-import { space, color, layout } from 'styled-system'
+import { position, space, color, layout, flexbox } from 'styled-system'
 
 const Box = styled.div({
+  display: "flex",
+  flex: "row",
+  position: "relative",
+  top: "-36em",
   boxSizing: 'border-box',
   minWidth: 0,
+
 },
 space,
 color,

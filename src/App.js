@@ -14,18 +14,21 @@ function App (props) {
   return (
     <BrowserRouter>
         <Navbar />
-        <Box width={[1, 1/2, 1/3]} bg="black">
+        <Box bg="navaccent">
         <Card image={logo}
         title="TheAssemblers"
-        text="Welcome to The Assemblers WebApp" />
-          </Box>
-        <Box width={[1, 1/2, 1/3]} bg="green">        <Card image={logo}
-                title="TheAssemblers"
-                text="Welcome to The Assemblers WebApp" /></Box>
-        <Box width={[1, 1/2, 1/3]} bg="red">        <Card image={logo}
-                title="TheAssemblers"
-                text="Welcome to The Assemblers WebApp" /></Box>
-        <Footer />
+        text="Welcome to The Assemblers WebApp, Who we are"
+        color="white" />
+       <Card image={logo}
+        title="TheAssemblers"
+        text="Welcome to The Assemblers WebApp"
+        text="What We Do"
+        />
+       <Card image={logo}
+          title="TheAssemblers"
+          text="Welcome to The Assemblers WebApp, Contact Us" />
+       </Box>
+      <Footer />
     </BrowserRouter>
   );
 }
