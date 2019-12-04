@@ -36,6 +36,7 @@ const Title = styled.h3`
   color: #fff;
   margin: 0;
   padding: 15px;
+  text-align: center;
 `;
 
 const Text = styled.p`
