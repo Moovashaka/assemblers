@@ -4,23 +4,32 @@ import { space, color, layout } from 'styled-system'
 
 const Col = styled.div`
   display: flex;
-  flex-flow: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
   box-sizing: border-box;
-  margin: 10vh;
+  border-radius: 10px;
+  margin: 2vh;
   padding: 20px 20px;
   background: ${ props => props.theme.colors.black };
-  font-size: 1vw;
+  font-size: 1.5vw;
 
-  @media screen and (max-width:768px) {
+  container::after {
+    content: "";
     display: block;
+    clear: both;
+  }
+
+  @media screen and (min-width:768px) {
     float: left;
   };
 `;
 
 const Image = styled.img`
-  height: 8vmin;
+  height: 10vmin;
+
+  @media screen and (max-width:768px) {
+    height: 5vmin;
+  };
 `;
 
 const Title = styled.h3`

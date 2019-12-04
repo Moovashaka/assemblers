@@ -2,18 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import Navlinks from './Navlinks.js'
 
-
 const MyMobileNavBar = styled.nav`
-
-width: 50vw;
+/* position: relative; */
+box-sizing: border-box;
+flex:none;
+width: 100vw;
 background: ${ props => props.theme.colors.navprimary };
 margin-bottom: 15px;
-align-self: flex-end;
 box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 z-index: 1000;
+margin-left: -100%;
 
 transition: transform 1s;
-transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 15px)") });
+transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 20px)") });
+
+/* container::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
 
 .nav-links {
   display: flex;
@@ -21,7 +28,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
   justify-content: space-evenly;
   align-items: center;
 
-  height: 60vh;
+  height: 77vh;
 
   List-style:none;
 }
@@ -31,9 +38,9 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 5vh;
   color: white;
-  padding: 0 0.5rem;
+  padding: 0 0rem;
   text-shadow:  2px 2px 2px black;
   font-size: 2.5vh;
   font-family: 'Roboto', sans-serif;

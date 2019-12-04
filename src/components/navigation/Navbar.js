@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 import DesktopNavbar from './DesktopNavbar.js'
 import MobileNavbar from './MobileNavbar.js'
 import styled from 'styled-components'
+import Wrapper from './TopSection.js'
+import Card from '../content/Card.js'
+import Box from '../main/Box.js'
+import logo from '../../images/logo.svg'
 
 const MyNavbar = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-
-  overflow-x: hidden;
+  /* justify-content: center; */
+  /* overflow-x: hidden; */
 `
 
 class Navbar extends Component {
@@ -48,7 +51,23 @@ class Navbar extends Component {
         <DesktopNavbar
           displayMobileNavbar = { this.state.displayMobileNavbar }
           toggleMobileNavbar = { this.toggleMobileNavbar } />
-         <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
+          <Wrapper>
+          <Box bg="navAccent">
+          <Card image={logo}
+          title="TheAssemblers"
+          text="Welcome to The Assemblers WebApp, Who we are"
+          color="white" />
+          <Card image={logo}
+          title="TheAssemblers"
+          text="Welcome to The Assemblers WebApp, Who we are"
+          color="white" />
+          <Card image={logo}
+          title="TheAssemblers"
+          text="Welcome to The Assemblers WebApp, Who we are"
+          color="white" />
+          </Box>
+          <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
+          </Wrapper>
       </MyNavbar>
     );
     }

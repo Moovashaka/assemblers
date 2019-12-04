@@ -1,18 +1,16 @@
 import styled from 'styled-components'
-import { position, space, color, layout, flexbox } from 'styled-system'
 
-const Box = styled.div({
-  display: "flex",
-  flex: "row",
-  position: "relative",
-  top: "-36em",
-  boxSizing: 'border-box',
-  minWidth: 0,
+const Box = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  boxSizing: 'border-box';
+  minWidth: 0;
 
-},
-space,
-color,
-layout
-)
+  @media screen and (max-width: 768px) {
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      width: 100vw;
+  }
+`
 
 export default Box
