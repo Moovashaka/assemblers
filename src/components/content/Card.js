@@ -5,12 +5,12 @@ import { space, color, layout } from 'styled-system'
 const Col = styled.div`
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
   box-sizing: border-box;
   border-radius: 10px;
   margin: 2vh;
-  padding: 20px 20px;
-  background: ${ props => props.theme.colors.black };
+  padding: 5vw 5vw;
+  background: ${ props => props.theme.colors.green };
   font-size: 1.5vw;
 
   container::after {
@@ -35,7 +35,7 @@ const Image = styled.img`
 const Title = styled.h3`
   color: #fff;
   margin: 0;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 `;
 
@@ -43,7 +43,7 @@ const Text = styled.p`
 
   color: white;
   margin: 0;
-  padding: 0px 15px;
+  padding: 0px 5px;
   text-align: center;
 `;
 

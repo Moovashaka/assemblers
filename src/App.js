@@ -5,16 +5,16 @@ import Box from './components/main/Box.js'
 import Card from './components/content/Card.js'
 import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
+import theme from './theme.js'
 
 function App () {
   return (
     <BrowserRouter>
         <Navbar />
-        <Box width={[1,1/2,1/3]} bg="navaccent">
+        <Box bg="black">
         <Card image={logo}
         title="TheAssemblers"
-        text="Welcome to The Assemblers WebApp, Who we are"
-        color="white" />
+        text="Welcome to The Assemblers WebApp, Who we are"  />
        <Card image={logo}
         title="TheAssemblers"
         text="Welcome to The Assemblers WebApp"

@@ -10,8 +10,6 @@ import logo from '../../images/logo.svg'
 const MyNavbar = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  /* justify-content: center; */
-  /* overflow-x: hidden; */
 `
 
 class Navbar extends Component {
@@ -52,7 +50,7 @@ class Navbar extends Component {
           displayMobileNavbar = { this.state.displayMobileNavbar }
           toggleMobileNavbar = { this.toggleMobileNavbar } />
           <Wrapper>
-          <Box bg="navAccent">
+          <Box bg="black">
           <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Who we are"

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Navlinks from './Navlinks.js'
 
 const MyMobileNavBar = styled.nav`
-/* position: relative; */
 box-sizing: border-box;
 flex:none;
 width: 100vw;
@@ -15,12 +14,6 @@ margin-left: -100%;
 
 transition: transform 1s;
 transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 20px)") });
-
-/* container::after {
-  content: "";
-  display: block;
-  clear: both;
-} */
 
 .nav-links {
   display: flex;
