@@ -6,6 +6,7 @@ import Wrapper from './TopSection.js'
 import Card from '../content/Card.js'
 import Box from '../main/Box.js'
 import logo from '../../images/logo.svg'
+import leftTopContent from '../content/TopLeftCol.js'
 
 const MyNavbar = styled.div`
   display: flex;
@@ -53,16 +54,19 @@ class Navbar extends Component {
           <Box bg="black">
           <Card image={logo}
           title="TheAssemblers"
-          text="Welcome to The Assemblers WebApp, Who we are"
-          color="white" />
+          text="Welcome to The Assemblers WebApp"
+          content="This is the content" />
           <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Who we are"
-          color="white" />
+          content="Some more Content"
+          morecontent="this is some more content"
+           />
           <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Who we are"
-          color="white" />
+          content={leftTopContent}
+           />
           </Box>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
           </Wrapper>

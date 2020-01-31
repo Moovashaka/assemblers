@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space, color, layout } from 'styled-system'
+// import { space, color, layout } from 'styled-system'
 
 const Col = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Col = styled.div`
   border-radius: 10px;
   margin: 2vh;
   padding: 5vw 5vw;
-  background: ${ props => props.theme.colors.green };
+  background: ${ props => props.theme.colors.darkBlue };
   font-size: 1.5vw;
 
   container::after {
@@ -40,10 +40,23 @@ const Title = styled.h3`
 `;
 
 const Text = styled.p`
-
   color: white;
   margin: 0;
-  padding: 0px 5px;
+  padding: 10px 5px;
+  text-align: center;
+`;
+
+const Content = styled.p`
+  color: white;
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+`;
+
+const Morecontent = styled.p`
+  color: white;
+  margin: 0;
+  padding: 10px 5px;
   text-align: center;
 `;
 
@@ -51,16 +64,22 @@ const Card = ({
   title,
   image,
   text,
+  content,
+  morecontent,
   color,
   layout,
   space,
   ...props
 }) => (
-  <Col {...props}>
+  <>
+  <Col color={color} {...props} >
   <Image src={image} alt={title} />
   <Title>{title}</Title>
   <Text>{text}</Text>
+  <Content>{content}</Content>
+  <Content>{morecontent}</Content>
   </Col>
+  </>
 );
 
 

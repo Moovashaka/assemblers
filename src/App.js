@@ -6,6 +6,7 @@ import Card from './components/content/Card.js'
 import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
 import theme from './theme.js'
+import leftTopContent from './components/content/TopLeftCol.js'
 
 function App () {
   return (
@@ -14,7 +15,9 @@ function App () {
         <Box bg="black">
         <Card image={logo}
         title="TheAssemblers"
-        text="Welcome to The Assemblers WebApp, Who we are"  />
+        text="Welcome to The Assemblers WebApp, Who we are"
+        content={leftTopContent}
+        />
        <Card image={logo}
         title="TheAssemblers"
         text="Welcome to The Assemblers WebApp"
@@ -24,7 +27,7 @@ function App () {
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Contact Us" />
        </Box>
-        <Footer />
+      <Footer />
     </BrowserRouter>
   );
 }
