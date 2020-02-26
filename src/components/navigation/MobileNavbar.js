@@ -13,16 +13,14 @@ z-index: 1000;
 margin-left: -100%;
 
 transition: transform 1s;
-transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 20px)") });
+transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 10px)") });
 
 .nav-links {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-
   height: 77vh;
-
   List-style:none;
 }
 

@@ -4,9 +4,8 @@ import MobileNavbar from './MobileNavbar.js'
 import styled from 'styled-components'
 import Wrapper from './TopSection.js'
 import Card from '../content/Card.js'
-import Box from '../main/Box.js'
 import logo from '../../images/logo.svg'
-import leftTopContent from '../content/TopLeftCol.js'
+import Jumbox from '../main/Jumbox.js'
 
 const MyNavbar = styled.div`
   display: flex;
@@ -51,12 +50,12 @@ class Navbar extends Component {
           displayMobileNavbar = { this.state.displayMobileNavbar }
           toggleMobileNavbar = { this.toggleMobileNavbar } />
           <Wrapper>
-          <Box bg="black">
+          <Jumbox bg="black">
           <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp"
           content="This is the content" />
-          <Card image={logo}
+          {/* <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Who we are"
           content="Some more Content"
@@ -65,12 +64,12 @@ class Navbar extends Component {
           <Card image={logo}
           title="TheAssemblers"
           text="Welcome to The Assemblers WebApp, Who we are"
-          content={leftTopContent}
-           />
-          </Box>
+          content="the content"
+           /> */}
+          </Jumbox>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
           </Wrapper>
-      </MyNavbar>
+        </MyNavbar>
     );
     }
   }
