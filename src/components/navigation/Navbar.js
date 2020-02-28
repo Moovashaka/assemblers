@@ -52,10 +52,16 @@ class Navbar extends Component {
           <Wrapper>
             <Jumbox>
             <Topcard image={logo}
-            title="TheAssemblers"
-            text="Welcome to The Assemblers WebApp"
-            content="This is the content"
-            morecontent="this is more conent"/>
+            title="Flatpack Assembly Service"
+            text="Welcome to TheAssemblers, your first point of Contact
+            for fast efficient Flatpack Furniture assembly. We take the grind out
+            of flatpack assembly so you can focus on doing the things you need to
+            get done, whether work or leisure. "
+            content="Our experienced, polite and respectful assemblers will come to you at
+            home, work, office or garden and put your flatpack together with the minimum of fuss"
+            morecontent="Whether you have a single Ikea pax or you wish to create a walk-in
+            wardrobe, a Forest shed from Homebase or a BalconyFort from Dunster House we'd               delighted to build it for you
+            be delighted to build it for you"/>
             </Jumbox>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
           </Wrapper>
