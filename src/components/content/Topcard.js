@@ -8,6 +8,8 @@ const Col = styled.div`
   margin: 10px;
   padding: 5vw 5vw;
   background: ${ props => props.theme.colors.darkBlue };
+  border: .15rem solid;
+  border-color: ${ props => props.theme.colors.navprimary };
   font-size: 1.5vw;
 
   container::after {
@@ -15,7 +17,11 @@ const Col = styled.div`
     display: block;
     clear: both;
   }
-  `;
+
+  @media screen and (min-width:768px) {
+    float: left;
+  };
+`;
 
 const Image = styled.img`
   height: 10vmin;
@@ -53,7 +59,7 @@ const Morecontent = styled.p`
   text-align: center;
 `;
 
-const Card = ({
+const Topcard = ({
   title,
   image,
   text,
@@ -70,10 +76,10 @@ const Card = ({
   <Title>{title}</Title>
   <Text>{text}</Text>
   <Content>{content}</Content>
-  <Morecontent>{morecontent}</Morecontent>
+  <Content>{morecontent}</Content>
   </Col>
   </>
 );
 
 
-export default Card
+export default Topcard

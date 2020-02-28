@@ -3,7 +3,7 @@ import DesktopNavbar from './DesktopNavbar.js'
 import MobileNavbar from './MobileNavbar.js'
 import styled from 'styled-components'
 import Wrapper from './TopSection.js'
-import Card from '../content/Card.js'
+import Topcard from '../content/Topcard.js'
 import logo from '../../images/logo.svg'
 import Jumbox from '../main/Jumbox.js'
 
@@ -50,23 +50,13 @@ class Navbar extends Component {
           displayMobileNavbar = { this.state.displayMobileNavbar }
           toggleMobileNavbar = { this.toggleMobileNavbar } />
           <Wrapper>
-          <Jumbox bg="black">
-          <Card image={logo}
-          title="TheAssemblers"
-          text="Welcome to The Assemblers WebApp"
-          content="This is the content" />
-          {/* <Card image={logo}
-          title="TheAssemblers"
-          text="Welcome to The Assemblers WebApp, Who we are"
-          content="Some more Content"
-          morecontent="this is some more content"
-           />
-          <Card image={logo}
-          title="TheAssemblers"
-          text="Welcome to The Assemblers WebApp, Who we are"
-          content="the content"
-           /> */}
-          </Jumbox>
+            <Jumbox>
+            <Topcard image={logo}
+            title="TheAssemblers"
+            text="Welcome to The Assemblers WebApp"
+            content="This is the content"
+            morecontent="this is more conent"/>
+            </Jumbox>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
           </Wrapper>
         </MyNavbar>

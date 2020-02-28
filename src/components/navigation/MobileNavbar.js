@@ -20,7 +20,7 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 77vh;
+  height: 27vh;
   List-style:none;
 }
 
