@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Col = styled.div`
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   border-radius: 10px;
   margin: 10px;
   padding: 5vw 5vw;
@@ -19,15 +20,18 @@ const Col = styled.div`
   }
 
   @media screen and (min-width:768px) {
-    float: left;
+    /* float: left; */
   };
 `;
 
 const Image = styled.img`
-  height: 10vmin;
+  height: 15vmin;
+  width: 80vmin;
 
   @media screen and (max-width:768px) {
     height: 10vmin;
+    width: 80vmin;
+    font-size: 3vw;  
   };
 `;
 
