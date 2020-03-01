@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 const Col = styled.div`
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   border-radius: 10px;
   margin: 10px;
-  padding: 5vw 5vw;
+  padding: 2vw 2vw;
   background: ${ props => props.theme.colors.darkBlue };
   border: .15rem solid;
   border-color: ${ props => props.theme.colors.navprimary };
@@ -20,18 +20,19 @@ const Col = styled.div`
   }
 
   @media screen and (min-width:768px) {
-    /* float: left; */
+
   };
 `;
 
 const Image = styled.img`
-  height: 15vmin;
-  width: 80vmin;
+
+
 
   @media screen and (max-width:768px) {
-    height: 10vmin;
+    height: 15vmin;
     width: 80vmin;
-    font-size: 3vw;  
+    font-size: 5vw;
+
   };
 `;
 

@@ -49,7 +49,7 @@ class Navbar extends Component {
         <DesktopNavbar
           displayMobileNavbar = { this.state.displayMobileNavbar }
           toggleMobileNavbar = { this.toggleMobileNavbar } />
-          <Wrapper>
+        <Wrapper>
             <Jumbox>
             <Topcard image={banner}
             title="Flatpack Assembly Service"
@@ -64,7 +64,7 @@ class Navbar extends Component {
             be delighted to build it for you"/>
             </Jumbox>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
-          </Wrapper>
+        </Wrapper>
         </MyNavbar>
     );
     }
