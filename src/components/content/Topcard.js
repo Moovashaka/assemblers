@@ -26,7 +26,10 @@ const Col = styled.div`
 
 const Image = styled.img`
 
-
+  @media screen and (min-width:768px) {
+    padding: 0vw 6vw;
+    width: 100vmin;
+  }
 
   @media screen and (max-width:768px) {
     height: 15vmin;

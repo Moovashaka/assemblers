@@ -60,7 +60,7 @@ class Navbar extends Component {
             content="Our experienced, polite and respectful assemblers will come to you at
             home, work, office or garden and put your flatpack together with the minimum of fuss"
             morecontent="Whether you have a single Ikea pax or you wish to create a walk-in
-            wardrobe, a Forest shed from Homebase or a BalconyFort from Dunster House we'd               delighted to build it for you
+            wardrobe, a Forest shed from Homebase or a BalconyFort from Dunster House we'd
             be delighted to build it for you"/>
             </Jumbox>
           <MobileNavbar displayMobileNavbar = { this.state.displayMobileNavbar }/>
