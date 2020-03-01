@@ -11,7 +11,7 @@ const Col = styled.div`
   background: ${ props => props.theme.colors.darkBlue };
   border: .15rem solid;
   border-color: ${ props => props.theme.colors.navprimary };
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 
   container::after {
     content: "";
@@ -20,7 +20,7 @@ const Col = styled.div`
   }
 
   @media screen and (min-width:768px) {
-
+    font-size: 1rem;
   };
 `;
 
@@ -31,7 +31,7 @@ const Image = styled.img`
   @media screen and (max-width:768px) {
     height: 15vmin;
     width: 80vmin;
-    font-size: 5vw;
+    font-size: 5rem;
 
   };
 `;
