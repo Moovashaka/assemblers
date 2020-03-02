@@ -6,12 +6,10 @@ const Col = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   border-radius: 10px;
-  margin: 10px;
-  padding: 2vw 2vw;
   background: ${ props => props.theme.colors.darkBlue };
   border: .15rem solid;
   border-color: ${ props => props.theme.colors.navprimary };
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   container::after {
     content: "";
@@ -22,17 +20,20 @@ const Col = styled.div`
   @media screen and (min-width:768px) {
     font-size: 1rem;
   };
+  @media screen and (max-width:480px) {
+    font-size: 1.25rem;
+  };
 `;
 
 const Image = styled.img`
 
   @media screen and (min-width:768px) {
-    padding: 0vw 6vw;
-    width: 100vmin;
+    margin: 0 0vw 0 0;
+    /* width: 90vmin; */
   }
 
   @media screen and (max-width:768px) {
-    height: 15vmin;
+    /* height: 15vmin; */
     width: 80vmin;
     font-size: 5rem;
 

@@ -4,7 +4,7 @@ import MobileNavbar from './MobileNavbar.js'
 import styled from 'styled-components'
 import Wrapper from './TopSection.js'
 import Topcard from '../content/Topcard.js'
-import banner from '../../images/banner.png'
+import banner from '../../images/banner1100x243.png'
 import Jumbox from '../main/Jumbox.js'
 
 const MyNavbar = styled.div`
