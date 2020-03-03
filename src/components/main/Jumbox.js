@@ -4,7 +4,7 @@ import { color } from 'styled-system'
 const Jumbox = styled.div`
   display:flex;
   flex-flow: column nowrap;
-  margin: 2vw 3vw;
+  margin: 3vw 3vw;
   width: 100vw;
 
 

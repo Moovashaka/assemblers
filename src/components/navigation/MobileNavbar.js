@@ -13,7 +13,7 @@ z-index: 1000;
 margin-left: -100%;
 
 transition: transform 1s;
-transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 10px)") });
+transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 20px)") });
 
 .nav-links {
   display: flex;

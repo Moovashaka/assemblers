@@ -27,14 +27,9 @@ const Col = styled.div`
 
 const Image = styled.img`
 
-  @media screen and (min-width:768px) {
-    margin: 0 0vw 0 0;
-    /* width: 90vmin; */
-  }
-
   @media screen and (max-width:768px) {
     /* height: 15vmin; */
-    width: 80vmin;
+    width: 90vmin;
     font-size: 5rem;
 
   };
