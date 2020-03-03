@@ -3,7 +3,7 @@ import logo from './assemblerslogo.svg'
 import styled from 'styled-components'
 import Navlinks from './Navlinks.js'
 import mobileNavIcon from '../../images/mobileNavIcon.svg'
-
+import Phonenumber from '../navigation/Phone.js'
 
 
 const MyDesktopNavbar = styled.nav`
@@ -22,10 +22,8 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: right;
-
   List-style:none;
-
-  width: 35vw;
+  width: 25vw;
 
   @media screen and (max-width: 768px) {
       display: none;
@@ -34,12 +32,12 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 
 .link {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
   height: 15vh;
+  float: right;
   color: white;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   text-shadow:  2px 2px 2px black;
   font-size: 2.5vh;
   font-family: 'Roboto', sans-serif;
@@ -54,18 +52,26 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 
   :hover {
     opacity: 1;
-    transition:opacity 2s ease-in-out;
+    transition:opacity 1s ease-in-out;
   }
   :hover::after {
-    opacity: 0.5;
-    transition:opacity 3s ease-in-out;
+    opacity: 1;
+    transition:opacity 2s ease-in-out;
   }
 }
-`
 
+@media screen and (max-width: 768px) {
+  .phone {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 32vw 0vw 0vw -62vw;
+    }
+}
+
+`
 const Logo = styled.img `
    height: 20vmin;
-   float: left;
+   float: right;
    margin: 5vmin;
    box-shadow: -5px 5px 5px 5px ${ props => props.theme.navaccent }:
 `
@@ -78,8 +84,6 @@ const MyMobileNavButton = styled.button`
     background: rgba(0, 0, 0, 0.1);
     outline: none;
 }
-
-
 
   @media screen and (max-width: 768px) {
       display: block
@@ -110,6 +114,7 @@ const DesktopNavbar = props => {
         >
       <Icon src={mobileNavIcon} displayMobileNavbar = { props.displayMobileNavbar } alt = "The Assemblers Flatpack furniture assembly" />
       </MyMobileNavButton>
+      <Phonenumber />
       </MyDesktopNavbar>
     );
   }

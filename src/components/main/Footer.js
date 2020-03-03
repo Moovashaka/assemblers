@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Phonenumber from '../navigation/Phone.js'
 
 const Footerbar = styled.div`
 display: flex;
@@ -19,6 +20,7 @@ const Footer = props => {
       return (
       <Footerbar>
       Footer
+      <Phonenumber />
       </Footerbar>
     );
 }
