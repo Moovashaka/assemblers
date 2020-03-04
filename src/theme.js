@@ -2,8 +2,9 @@
 const breakpoints = ["40em", "52em", "64em"];
 
 const colors = {
-  navprimary:"#333f49",
-  navaccent: "#242D34",
+  navprimary:"#5A2A27",
+  navaccent: "#A1786C",
+  background: "#EDEDED",
   black: "#342E37",
   lightBlue: "#3C91E6",
   darkBlue: "#014D6B",

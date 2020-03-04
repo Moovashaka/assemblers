@@ -60,12 +60,29 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
   }
 }
 
-@media screen and (max-width: 768px) {
+.phone {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 3vh;
+    padding: 2vw;
+  }
+
+@media screen and (max-width: 52em) {
   .phone {
       display: flex;
       flex-flow: row nowrap;
       margin: 32vw 0vw 0vw -62vw;
+      font-size: 3vh;
     }
+}
+
+/* @media screen and (max-width: 64em) {
+  .phone {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 32vw 0vw 0vw -63vw;
+      font-size: 3vh;
+    } */
 }
 
 `

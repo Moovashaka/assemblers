@@ -6,7 +6,7 @@ const Col = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   border-radius: 10px;
-  background: ${ props => props.theme.colors.darkBlue };
+  background: ${ props => props.theme.colors.navaccent };
   border: .15rem solid;
   border-color: ${ props => props.theme.colors.navprimary };
   font-size: 1.25rem;

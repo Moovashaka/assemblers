@@ -9,7 +9,7 @@ const Col = styled.div`
   border-radius: 10px;
   margin: 2vh;
   padding: 1vw 1vw;
-  background: ${ props => props.theme.colors.darkBlue };
+  background: ${ props => props.theme.colors.navaccent };
   font-size: 1.5vw;
 
   container::after {
