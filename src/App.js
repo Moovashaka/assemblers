@@ -22,7 +22,6 @@ function App () {
        <Card image={logo}
         title="Customer Feedback"
         text="Brilliant service, can't recommend it highly enough"
-        text="What We Do"
         />
        <Card image={logo}
           title="Contact US"
