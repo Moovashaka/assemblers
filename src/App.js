@@ -14,18 +14,19 @@ function App () {
         <Navbar />
         <Box bg="black">
         <Card image={logo}
-        title="TheAssemblers"
-        text="Welcome to The Assemblers WebApp, Who we are"
-        content={leftTopContent}
+        title="FAQ"
+        text="Our fitters carry
+        some of the more common spare parts, just in case something is missing"
+        content=""
         />
        <Card image={logo}
-        title="TheAssemblers"
-        text="Welcome to The Assemblers WebApp"
+        title="Customer Feedback"
+        text="Brilliant service, can't recommend it highly enough"
         text="What We Do"
         />
        <Card image={logo}
-          title="TheAssemblers"
-          text="Welcome to The Assemblers WebApp, Contact Us" />
+          title="Contact US"
+          text="Fill out our contact form or phone for a quote" />
        </Box>
       <Footer />
     </BrowserRouter>
