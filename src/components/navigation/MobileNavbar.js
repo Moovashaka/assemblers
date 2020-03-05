@@ -5,7 +5,7 @@ import Navlinks from './Navlinks.js'
 const MyMobileNavBar = styled.nav`
 box-sizing: border-box;
 flex:none;
-width: 100vw;
+width: 105vw;
 background: ${ props => props.theme.colors.navprimary };
 margin-bottom: 15px;
 box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
@@ -13,14 +13,15 @@ z-index: 1000;
 margin-left: -100%;
 
 transition: transform 1s;
-transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 20px)") });
+transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(100% + 15px)") });
 
 .nav-links {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 27vh;
+  height: 25vh;
+  width: 100%
   List-style:none;
 }
 
