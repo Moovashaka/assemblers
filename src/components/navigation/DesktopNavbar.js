@@ -74,18 +74,6 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
     margin: 30vw 0vw 0vw -57vw;
     }
 }
-
- /* @media screen and (max-width: 52em) {
-  .phone {
-        margin: 30vw 0vw 0vw -57vw;
-    }
-} */
-
-/* @media screen and (max-width: 62em) {
- .phone {
-     margin: 0vw 0vw 0vw 1vw;
-   }
-} */
 `
 const Logo = styled.img `
    height: 20vmin;
