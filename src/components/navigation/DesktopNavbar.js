@@ -63,28 +63,29 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 .phone {
     display: flex;
     flex-flow: row nowrap;
-    font-size: 3vh;
+    font-size: calc(10px + 3vmin);
     padding: 2vw;
   }
 
-@media screen and (max-width: 52em) {
+@media screen and (max-width: 40em) {
   .phone {
-      display: flex;
-      flex-flow: row nowrap;
-      margin: 32vw 0vw 0vw -62vw;
-      font-size: 3vh;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30vw 0vw 0vw -57vw;
     }
 }
 
-/* @media screen and (max-width: 64em) {
+ /* @media screen and (max-width: 52em) {
   .phone {
-      display: flex;
-      flex-flow: row nowrap;
-      margin: 32vw 0vw 0vw -63vw;
-      font-size: 3vh;
-    } */
-}
+        margin: 30vw 0vw 0vw -57vw;
+    }
+} */
 
+/* @media screen and (max-width: 62em) {
+ .phone {
+     margin: 0vw 0vw 0vw 1vw;
+   }
+} */
 `
 const Logo = styled.img `
    height: 20vmin;
