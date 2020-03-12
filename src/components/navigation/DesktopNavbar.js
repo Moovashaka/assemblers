@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './assemblerslogo.svg'
+import logo from './assemblerslogophone.svg'
 import styled from 'styled-components'
 import Navlinks from './Navlinks.js'
 import mobileNavIcon from '../../images/mobileNavIcon.svg'
@@ -64,14 +64,31 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
     display: flex;
     flex-flow: row nowrap;
     font-size: calc(10px + 3vmin);
-    padding: 2vw;
+    text-shadow:  2px 2px 2px black;
+    padding: 5vw;
   }
+
+@media screen and (max-width: 62em) {
+  .phone {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30vw 0vw 0vw -57vw;
+    }
+}
+
+@media screen and (max-width: 52em) {
+  .phone {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 25vw 0vw 0vw -22vw;
+    }
+}
 
 @media screen and (max-width: 40em) {
   .phone {
     display: flex;
     flex-flow: row nowrap;
-    margin: 30vw 0vw 0vw -57vw;
+    margin: 35vw 0vw 0vw -67vw;
     }
 }
 `
@@ -85,6 +102,7 @@ const MyMobileNavButton = styled.button`
   background: transparent;
   display: none;
   border-radius: 10px;
+  margin: 0 2vw 0 5vw;
 
   &:focus {
     background: rgba(0, 0, 0, 0.1);

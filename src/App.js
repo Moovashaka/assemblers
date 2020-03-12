@@ -6,7 +6,7 @@ import Card from './components/content/Card.js'
 import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
 import theme from './theme.js'
-import leftTopContent from './components/content/TopLeftCol.js'
+
 
 function App () {
   return (
