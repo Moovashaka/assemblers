@@ -3,7 +3,7 @@ import logo from './assemblerslogophone.svg'
 import styled from 'styled-components'
 import Navlinks from './Navlinks.js'
 import mobileNavIcon from '../../images/mobileNavIcon.svg'
-import Phonenumber from '../navigation/Phone.js'
+
 
 
 const MyDesktopNavbar = styled.nav`
@@ -59,38 +59,6 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
     transition:opacity 2s ease-in-out;
   }
 }
-
-.phone {
-    display: flex;
-    flex-flow: row nowrap;
-    font-size: calc(10px + 3vmin);
-    text-shadow:  2px 2px 2px black;
-    padding: 5vw;
-  }
-
-@media screen and (max-width: 62em) {
-  .phone {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 30vw 0vw 0vw -57vw;
-    }
-}
-
-@media screen and (max-width: 52em) {
-  .phone {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 25vw 0vw 0vw -22vw;
-    }
-}
-
-@media screen and (max-width: 40em) {
-  .phone {
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 35vw 0vw 0vw -67vw;
-    }
-}
 `
 const Logo = styled.img `
    height: 20vmin;
@@ -138,7 +106,6 @@ const DesktopNavbar = props => {
         >
       <Icon src={mobileNavIcon} displayMobileNavbar = { props.displayMobileNavbar } alt = "The Assemblers Flatpack furniture assembly" />
       </MyMobileNavButton>
-      <Phonenumber />
       </MyDesktopNavbar>
     );
   }
