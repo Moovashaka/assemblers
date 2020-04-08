@@ -23,7 +23,7 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
   justify-content: space-evenly;
   align-items: right;
   List-style:none;
-  width: 25vw;
+  width: 55vw;
 
   @media screen and (max-width: 768px) {
       display: none;
@@ -34,16 +34,16 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 15vh;
+  height: 20vh;
   float: right;
   color: white;
   padding: 0 1rem;
   text-shadow:  2px 2px 2px black;
-  font-size: 2.5vh;
+  font-size: 3.5vh;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.75;
 
   &:focus {
     background: rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 `
 const Logo = styled.img `
    height: 20vmin;
-   float: right;
+   // float: right;
    margin: 5vmin;
    box-shadow: -5px 5px 5px 5px ${ props => props.theme.navaccent }:
 `
@@ -84,7 +84,7 @@ const MyMobileNavButton = styled.button`
 const Icon = styled.img`
 
   background: none;
-  height: 8vh;
+  height: 5vh;
   border: none;
   align-self: flex-end;
   opacity: 0.5;
