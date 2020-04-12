@@ -7,9 +7,9 @@ const Col = styled.div`
   justify-content: center;
   border-radius: 10px;
   background: ${ props => props.theme.colors.navaccent };
-  border: .15rem solid;
+  border: .15em solid;
   border-color: ${ props => props.theme.colors.navprimary };
-  font-size: 1.25rem;
+  font-size: 1.25em;
 
   container::after {
     content: "";
@@ -18,7 +18,7 @@ const Col = styled.div`
   }
 
   @media screen and (min-width:768px) {
-    font-size: 1rem;
+    font-size: 1em;
   };
   @media screen and (max-width:480px) {
     font-size: 1.25rem;
@@ -28,11 +28,9 @@ const Col = styled.div`
 const Image = styled.img`
 
   @media screen and (max-width:768px) {
-    /* height: 15vmin; */
     width: 90vmin;
-    font-size: 5rem;
-
-  };
+    font-size: 5em;
+  }
 `;
 
 const Title = styled.h3`

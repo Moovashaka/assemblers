@@ -6,14 +6,15 @@ const Jumbox = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   padding: 2vh 3vw;
-  width: 100vw;
-
 
   @media screen and (max-width: 768px) {
       width: 90vw;
   }
   @media screen and (min-width: 768px) {
     width: 94vw;
+  }
+  @media screen and (min-width:1200px) {
+  padding: 2vh 1vmin 2vh 9vmin;
   }
 
   ${color}
