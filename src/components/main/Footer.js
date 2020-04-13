@@ -19,7 +19,7 @@ box-shadow: 5px -5px 5px ${ props => props.theme.colors.navaccent };
 const Footer = props => {
       return (
       <Footerbar>
-      Footer
+      <a class="twitter-timeline" href="https://twitter.com/AssemblersThe?ref_src=twsrc%5Etfw">Tweets by AssemblersThe</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> Footer
       <Phonenumber />
       </Footerbar>
     );
