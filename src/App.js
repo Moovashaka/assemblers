@@ -6,7 +6,7 @@ import Card from './components/content/Card.js'
 import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
 import theme from './theme.js'
-
+import Twitter from './components/main/Twitter.js'
 
 function App () {
   return (
@@ -25,7 +25,9 @@ function App () {
         />
        <Card image={logo}
           title="Contact US"
-          text="Fill out our contact form or phone for a quote" />
+          text="Fill out our contact form or phone for a quote"
+        />
+        <Twitter />
        </Box>
       <Footer />
     </BrowserRouter>

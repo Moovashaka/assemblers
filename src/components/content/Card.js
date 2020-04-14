@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import TwitterContainer from '../main/Twitter.js'
 
 const Col = styled.div`
   display: flex;
