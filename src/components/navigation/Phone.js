@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Phonenum = styled.p`
 color: white;
-opacity: 0.75;
+opacity: 1;
 `
 const Phonenumber = props => {
   return (

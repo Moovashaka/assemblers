@@ -19,11 +19,8 @@ const Col = styled.div`
   `;
 
 const Image = styled.img`
-  height: 10vmin;
-
-  @media screen and (max-width:768px) {
-    height: 10vmin;
-  };
+height: 10vmax;
+text-align: center;
 `;
 
 const Title = styled.h3`

@@ -19,8 +19,8 @@ box-shadow: 5px -5px 5px ${ props => props.theme.colors.navaccent };
 const Footer = props => {
       return (
       <Footerbar>
-       Footer
       <Phonenumber />
+      <h4>&copy;TheAssemblers {(new Date().getFullYear())}</h4>
       </Footerbar>
     );
 }
