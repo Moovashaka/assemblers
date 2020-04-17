@@ -26,7 +26,6 @@ function App () {
         />
        <Cardone image={sboard}
         title="Customer Feedback"
-        text="Brilliant service, can't recommend it highly enough"
         />
        <Card image={comp}
           title="Contact US"
