@@ -3,6 +3,7 @@ import Navbar from './components/navigation/Navbar.js'
 import Footer from './components/main/Footer.js'
 import Box from './components/main/Box.js'
 import Card from './components/content/Card.js'
+import Cardone from './components/content/Cardone.js'
 import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
 import table from './images/table.png'
@@ -10,6 +11,7 @@ import sboard from './images/sideboard.png'
 import comp from './images/computers.jpg'
 import theme from './theme.js'
 import Twitter from './components/main/Twitter.js'
+
 
 function App () {
   return (
@@ -22,7 +24,7 @@ function App () {
         some of the more common spare parts, just in case something is missing"
         content=""
         />
-       <Card image={sboard}
+       <Cardone image={sboard}
         title="Customer Feedback"
         text="Brilliant service, can't recommend it highly enough"
         />

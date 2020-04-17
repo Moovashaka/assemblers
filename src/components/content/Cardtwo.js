@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Col = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -51,7 +50,7 @@ const Morecontent = styled.p`
   text-align: center;
 `;
 
-const Card = ({
+const Cardtwo = ({
   title,
   image,
   text,
@@ -74,4 +73,4 @@ const Card = ({
 );
 
 
-export default Card
+export default Cardtwo

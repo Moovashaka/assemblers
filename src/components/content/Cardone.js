@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Slider from '../main/Slider.js'
 
 const Col = styled.div`
   display: flex;
@@ -51,12 +51,13 @@ const Morecontent = styled.p`
   text-align: center;
 `;
 
-const Card = ({
+const Cardone = ({
   title,
   image,
   text,
   content,
   morecontent,
+  slider,
   color,
   layout,
   space,
@@ -69,9 +70,10 @@ const Card = ({
   <Text>{text}</Text>
   <Content>{content}</Content>
   <Morecontent>{morecontent}</Morecontent>
+  <Slider>{slider}</Slider>
   </Col>
   </>
 );
 
 
-export default Card
+export default Cardone
