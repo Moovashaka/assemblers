@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Slider from '../main/Slider.js'
+import Slider from './Slider.js'
+
 
 const Col = styled.div`
   display: flex;
@@ -57,7 +58,6 @@ const Cardone = ({
   text,
   content,
   morecontent,
-  slider,
   color,
   layout,
   space,
@@ -68,9 +68,9 @@ const Cardone = ({
   <Image src={image} alt={title} />
   <Title>{title}</Title>
   <Text>{text}</Text>
+  <Slider></Slider>
   <Content>{content}</Content>
   <Morecontent>{morecontent}</Morecontent>
-  <Slider>{slider}</Slider>
   </Col>
   </>
 );
