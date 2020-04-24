@@ -21,15 +21,15 @@ const Col = styled.div`
     font-size: 1em;
   };
   @media screen and (max-width:480px) {
-    font-size: 1.25rem;
+    font-size: 1rem;
   };
 `;
 
 const Image = styled.img`
 
   @media screen and (max-width:768px) {
-    width: 90vmin;
-    font-size: 5em;
+  width: 90vmin;
+  margin: 1vh 1vw 1vh 1vw;
   }
 `;
 

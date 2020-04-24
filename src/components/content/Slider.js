@@ -5,7 +5,7 @@ function Slider() {
   let sliderArr = [<p>Very happy with the service</p>,
     <p>Brilliant service</p>,
     <p>Very helpful, friendly service</p>,
-    <p>Bought a high sleeper for the kids, built quickly and efficiently - Brilliant service</p>,<p>Exceptional service</p>];
+    <p>Bought a high sleeper for the kids,<br /> built quickly and efficiently <br /> - Brilliant service</p>,<p>Exceptional service</p>];
 
   const [x, setX] = useState(0);
 

@@ -28,7 +28,7 @@ function App () {
         title="Customer Feedback"
         />
        <Card image={comp}
-          title="Contact US"
+          title="Contact Us"
           text="Fill out our contact form or Telephone
           07305 474590 for a quote"
         />

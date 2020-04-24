@@ -7,9 +7,9 @@ const Col = styled.div`
   flex-flow: column wrap;
   border-radius: 10px;
   margin: 10px;
-  padding: 5vw 5vw;
+  padding: 5vw 1vw;
   background: ${ props => props.theme.colors.navaccent };
-  font-size: 1.5vw;
+  font-size: 1em;
 
   container::after {
     content: "";
@@ -21,6 +21,11 @@ const Col = styled.div`
 const Image = styled.img`
 height: 10vmax;
 text-align: center;
+
+@media screen and (max-width:768px) {
+width: 25vmax;
+height: 25vmax;
+}
 `;
 
 const Title = styled.h3`
