@@ -25,7 +25,7 @@ text-align: center;
 @media screen and (max-width:768px) {
 width: 25vmax;
 height: 25vmax;
-margin: 0 0 0 20vw;
+margin: 0 0 0 30vw;
 }
 
 @media screen and (max-width:480px) {
