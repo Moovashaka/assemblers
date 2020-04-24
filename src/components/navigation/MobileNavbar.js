@@ -20,7 +20,6 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 25vh;
   width: 100%
   List-style:none;
 }
@@ -32,13 +31,13 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
   align-items: center;
   height: 5vh;
   color: white;
-  padding: 0 0rem;
+  padding: 5vh 0rem;
   text-shadow:  2px 2px 2px black;
-  font-size: 2.5vh;
+  font-size: 4.5vh;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.75;
 
   &:focus {
     background: rgba(0, 0, 0, 0.1);
@@ -47,10 +46,10 @@ transform: translateX( ${ props => props.displayMobileNavbar ? ("0%") : ("calc(1
 
   :hover {
     opacity: 1;
-    transition:opacity 2s ease-in-out;
+    transition:opacity 1s ease-in-out;
   }
   :hover::after {
-    opacity: 0.5;
+    opacity: 0.75;
     transition:opacity 3s ease-in-out;
   }
 }

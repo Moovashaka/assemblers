@@ -12,6 +12,12 @@ const Box = styled.div`
       justify-content: space-evenly;
       width: 90vw;
   }
+
+  @media screen and (max-width: 480px) {
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      width: 95vw;
+  }
   ${color}
 `
 

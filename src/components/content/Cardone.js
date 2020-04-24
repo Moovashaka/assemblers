@@ -32,6 +32,13 @@ justify-content: center;
 @media screen and (max-width:768px) {
 width: 25vmax;
 height: 25vmax;
+padding: 0 0 0 30vw;
+}
+
+@media screen and (max-width:480px) {
+width: 15vmax;
+height: 15vmax;
+padding: 0 0 0 29vw;
 }
 `;
 

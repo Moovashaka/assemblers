@@ -61,10 +61,9 @@ box-shadow: -5px 5px 5px ${ props => props.theme.colors.navaccent };
 }
 `
 const Logo = styled.img `
-   height: 20vmin;
-   // float: right;
+   height: 30vmin;
    margin: 5vmin;
-   box-shadow: -5px 5px 5px 5px ${ props => props.theme.navaccent }:
+   box-shadow: 5px 5px 5px 5px ${ props => props.theme.navaccent }:
 `
 const MyMobileNavButton = styled.button`
   background: transparent;
@@ -87,7 +86,7 @@ const Icon = styled.img`
   height: 5vh;
   border: none;
   align-self: flex-end;
-  opacity: 0.5;
+  opacity: .75;
 
   &:focus {
     outline:none;
@@ -95,7 +94,12 @@ const Icon = styled.img`
 
   transition: transform 1s ease-in-out;
   transform: rotate(${ props => props.displayMobileNavbar ? ("90deg") : ("180deg") });
+
+  @media screen and (min-width:480px) {
+    height: 10vh;
+  }
 `
+
 const DesktopNavbar = props => {
     return (
       <MyDesktopNavbar>
