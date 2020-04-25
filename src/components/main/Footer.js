@@ -14,6 +14,10 @@ background: ${ props => props.theme.colors.navprimary };
 height: 20vh;
 text-align: center;
 box-shadow: 5px -5px 5px ${ props => props.theme.colors.navaccent };
+
+@media screen and (max-width: 768px) {
+  height: 20vh;
+}
 `
 
 const Footer = props => {
