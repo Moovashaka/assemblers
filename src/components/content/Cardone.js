@@ -68,6 +68,7 @@ const Cardone = ({
   image,
   color,
   layout,
+  content,
   space,
   ...props
 }) => (
@@ -76,6 +77,7 @@ const Cardone = ({
   <Image src={image} alt={title} />
   <Title>{title}</Title>
   <Slider></Slider>
+  <Content>{content}</Content>
   </Col>
   </>
 );

@@ -54,6 +54,12 @@ margin: 0;
 padding: 5px;
 `;
 
+const QthreeTitle = styled.h4`
+color: #fff;
+margin: 0;
+padding: 5px;
+`;
+
 const Text = styled.p`
   color: white;
   margin: 0;
@@ -80,6 +86,7 @@ const Card = ({
   image,
   qonetitle,
   qtwotitle,
+  qthreetitle,
   text,
   content,
   morecontent,
@@ -96,6 +103,7 @@ const Card = ({
   <Text>{text}</Text>
   <QtwoTitle>{qtwotitle}</QtwoTitle>
   <Content>{content}</Content>
+  <QthreeTitle>{qthreetitle}</QthreeTitle>
   <Morecontent>{morecontent}</Morecontent>
   </Col>
   </>

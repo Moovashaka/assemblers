@@ -25,15 +25,29 @@ function App () {
          but we advise you to check before our fitters arrive to ensure that all parts have been packaged."
         qtwotitle="Can you dispose of the packaging?"
         content="Unfortunately we can't as it becomes commercial waste if we take it."
-        more
+        qthreetitle="Do I have to wait in all Day?"
+        morecontent="We schedule an appointment to suit
+        your needs. Our aim is to arrive within an hour
+        of schedule, to facilitate overrunning and traffic."
         />
        <Cardone image={sboard}
         title="Customer Feedback"
+        content="We value your experience as our
+        customer and are proud of the feedback we receive."
         />
        <Card image={comp}
-          title="Contact Us"
-          text="Fill out our contact form or Telephone
-          07305 474590 for a quote"
+          title="Pricing &amp; Costs"
+          text="We believe in a straightforward and fair
+          pricing policy."
+          content=" we charge £25 per hour per fitter
+          for the first hours work and £20 per hour per fitter for
+          subsequent hours. Most tasks can be
+          completed by one fitter in 2 - 3 hours."
+          morecontent="As each item of furniture takes a different amount of time
+          to assemble we will estimate the cost before arrival, but
+          only charge for actual time taken to complete the job, as this
+          can vary with manufacturer, space available to work in etc.
+          Telephone: 07305 474590 for a FREE and friendly quote"
         />
         <Twitter />
        </Box>
