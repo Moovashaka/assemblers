@@ -28,6 +28,10 @@ const Col = styled.div`
 const Image = styled.img`
 
   @media screen and (max-width:768px) {
+  width: 90vmax;
+  margin: 1vh 1vw 1vh 1vw;
+  }
+  @media screen and (max-width:480px) {
   width: 90vmin;
   margin: 1vh 1vw 1vh 1vw;
   }
