@@ -42,6 +42,12 @@ const Title = styled.h3`
   text-align: center;
 `;
 
+const QoneTitle = styled.h4`
+color: #fff;
+margin: 0;
+padding: 5px;
+`;
+
 const Text = styled.p`
   color: white;
   margin: 0;
@@ -66,6 +72,7 @@ const Morecontent = styled.p`
 const Card = ({
   title,
   image,
+  qonetitle,
   text,
   content,
   morecontent,
@@ -78,6 +85,7 @@ const Card = ({
   <Col color={color} {...props} >
   <Image src={image} alt={title} />
   <Title>{title}</Title>
+  <QoneTitle>{qonetitle}</QoneTitle>
   <Text>{text}</Text>
   <Content>{content}</Content>
   <Morecontent>{morecontent}</Morecontent>
