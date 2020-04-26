@@ -23,8 +23,8 @@ function App () {
         qonetitle="What if something is missing?"
         text=" Our fitters carry some of the more common spare parts,
          but we advise you to check before our fitters arrive to ensure that all parts have been packaged."
-        content="Can you dispose of the packaging?
-        Unfortunately we can't as it becomes commercial waste if we take it."
+        qtwotitle="Can you dispose of the packaging?"
+        content="Unfortunately we can't as it becomes commercial waste if we take it."
         more
         />
        <Cardone image={sboard}
