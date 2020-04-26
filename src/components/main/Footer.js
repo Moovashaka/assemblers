@@ -16,7 +16,7 @@ text-align: center;
 box-shadow: 5px -5px 5px ${ props => props.theme.colors.navaccent };
 
 @media screen and (max-width: 768px) {
-  height: 20vh;
+  height: 30vh;
 }
 `
 
