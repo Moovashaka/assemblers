@@ -81,6 +81,19 @@ const Morecontent = styled.p`
   text-align: center;
 `;
 
+const EvenMorecontent = styled.p`
+  color: white;
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+`;
+
+const Phone = styled.h4`
+color: #fff;
+margin: 0;
+padding: 5px;
+`;
+
 const Card = ({
   title,
   image,
@@ -90,6 +103,8 @@ const Card = ({
   text,
   content,
   morecontent,
+  evenmorecontent,
+  phone,
   color,
   layout,
   space,
@@ -105,6 +120,8 @@ const Card = ({
   <Content>{content}</Content>
   <QthreeTitle>{qthreetitle}</QthreeTitle>
   <Morecontent>{morecontent}</Morecontent>
+  <EvenMorecontent>{evenmorecontent}</EvenMorecontent>
+  <Phone>{phone}</Phone>
   </Col>
   </>
 );

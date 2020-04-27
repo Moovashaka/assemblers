@@ -43,11 +43,14 @@ function App () {
           for the first hours work and £20 per hour per fitter for
           subsequent hours. Most tasks can be
           completed by one fitter in 2 - 3 hours."
-          morecontent="As each item of furniture takes a different amount of time
+          morecontent="As each item of furniture requires a different amount of time
           to assemble we will estimate the cost before arrival, but
           only charge for actual time taken to complete the job, as this
-          can vary with manufacturer, space available to work in etc.
-          Telephone: 07305 474590 for a FREE and friendly quote"
+          can vary with manufacturer, space available to work in etc."
+          evenmorecontent="Our operators have amassed significant experience in assesing
+          and estimating job duration, however please be assured that we will bring
+          any discrepencies to your attention as soon as they come to light."
+          phone="Telephone: 07305 474590 for a FREE and friendly quote"
         />
         <Twitter />
        </Box>
