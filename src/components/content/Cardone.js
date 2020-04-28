@@ -63,12 +63,20 @@ const Content = styled.p`
   text-align: center;
 `;
 
+const MoreContent = styled.p`
+  color: white;
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+`;
+
 const Cardone = ({
   title,
   image,
   color,
   layout,
   content,
+  morecontent,
   space,
   ...props
 }) => (
@@ -78,6 +86,7 @@ const Cardone = ({
   <Title>{title}</Title>
   <Slider></Slider>
   <Content>{content}</Content>
+  <MoreContent>{morecontent}</MoreContent>
   </Col>
   </>
 );

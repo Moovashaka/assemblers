@@ -34,6 +34,7 @@ function App () {
         title="Customer Feedback"
         content="We value your experience as our
         customer and are proud of the feedback we receive."
+        morecontent=""
         />
        <Card image={comp}
           title="Pricing &amp; Costs"
@@ -47,10 +48,10 @@ function App () {
           to assemble we will estimate the cost before arrival, but
           only charge for actual time taken to complete the job, as this
           can vary with manufacturer, space available to work in etc."
-          evenmorecontent="Our operators have amassed significant experience in assesing
+          evenmorecontent="Our operators have amassed significant experience in assessing
           and estimating job duration, however please be assured that we will bring
           any discrepencies to your attention as soon as they come to light."
-          phone="Telephone: 07305 474590 for a FREE and friendly quote"
+          phone="Telephone: 07305 474590 for a FREE and friendly estimate"
         />
         <Twitter />
        </Box>

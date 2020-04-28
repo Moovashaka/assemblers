@@ -5,7 +5,7 @@ const TwitterContainer = () => {
     const anchor = document.createElement("a");
     anchor.setAttribute("class", "twitter-timeline");
     anchor.setAttribute("data-theme", "dark");
-    anchor.setAttribute("data-tweet-limit", "5");
+    anchor.setAttribute("data-tweet-limit", "2");
     anchor.setAttribute("data-chrome", "noheader nofooter noborders");
     anchor.setAttribute("href", "https://twitter.com/AssemblersThe");
     document.getElementsByClassName("twitter-embed")[0].appendChild(anchor);
