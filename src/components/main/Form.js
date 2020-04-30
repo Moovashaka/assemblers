@@ -1,4 +1,5 @@
 import React from 'react';
+import './form.css'
 
 
 export default class ContactForm extends React.Component {
@@ -92,43 +93,17 @@ export default class ContactForm extends React.Component {
     }
 
   render() {
-    const mapStyles = {
-    width: "100%",
-    height: "auto",
-    frameborder: "0",
-    style: "border:0",
-    allowfullscreen: "allowfullscreen",
-  };
-
-
     return (
 
   <section id="contact">
-  <div className="container">
-    <div className="card card-body bg-light">
+  <div className="contact">
       <h3>Contact Us</h3>
   </div>
-  <br />
-  <div className="row">
-  <div className="col-sm-7">
-    <div className="map-address">
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&zoom=18&scale=1&size=600x300&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" style={mapStyles} />
-<br />
-<br />
-  <div className="card-block">
-  <address className="card-text">
-    <br />
-    <br />
-    <h3><i>RIBBLE VALLEY</i> Tyre &amp; Auto Services Limited</h3>
-    Stonebridge Mill, Kestor Lane, Longridge, Preston, Lancashire. PR3 3AD
-    <br />
-    <br />
-    <h3><a href="tel:+44-1772-784000">T: 01772 784000</a> F: 01772 784008</h3>
-  </address>
+  <div>
+    <div className="map">
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&zoom=18&scale=1&size=600x300&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" />
   </div>
-  </div>
-</div>
-      <div className="col-md-5">
+
         <form name="contactForm" onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input type="hidden" name="form-name" value="contactForm" />
@@ -169,7 +144,7 @@ export default class ContactForm extends React.Component {
           </div>
           <div className="form-group">
             <label>
-              <i>I'd like to enquire about:</i>
+              <i>Id like to enquire about:</i>
               <br />
               </label>
           </div>
@@ -184,7 +159,6 @@ export default class ContactForm extends React.Component {
           </select>
         </div>
           <br />
-          <br />
           <div className="form-group">
           <textarea
             type="text" value={this.state.message}
@@ -195,17 +169,19 @@ export default class ContactForm extends React.Component {
             placeholder="Message">
             </textarea>
         </div>
-          <br />
-          <br />
-        <button className="text-center" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
         <br />
+        <button className="text-center" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
         <br />
         <span>{this.state.formSent}</span>
         <br />
-        <br />
         </form>
-      </div>
-    </div>
+    <address>
+      <br />
+        <h3><i>TheAssemblers</i> Flatpack Furniture Assembly</h3>
+      Stonebridge Mill, Kestor Lane, Longridge, Preston, Lancashire. PR3 3AD
+      <br />
+        <h3><a href="tel:+44-1772-784000">T: 01772 784000</a> F: 01772 784008</h3>
+    </address>
   </div>
     </section>
 

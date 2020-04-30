@@ -1,0 +1,139 @@
+#contact {
+	display: flex;
+	color: white;
+}
+.contact {
+	margin: 1em 1em;
+}
+
+.map {
+	display: flex;
+	margin: 1em 1em;
+}
+
+.form {
+	background: #A1786C;
+	padding: 1em 1em;
+	max-width: 500px;
+	/* line-height: 10px */
+}
+
+.form-group {
+	margin-top: 1rem
+}
+
+.map-address {
+	margin-top: 2rem
+}
+
+p {
+	margin: 0;
+	position: relative
+}
+
+label {
+	display: block
+}
+
+input[type="text"],input[type="password"] {
+	background: #fffbfc;
+	border: 1px solid #e5e5e5;
+	padding: .8em .5em;
+	margin: .5em 0 0 0;
+	border-radius: 5px
+}
+
+input[type="text"]:focus,input[type="password"]:focus {
+	background: #fff
+}
+
+input[type="checkbox"] {
+	background: #333;
+	border: 1px solid #e5e5e5
+}
+
+span {
+	border-radius: 5px;
+	display: inline;
+	text-align: center;
+	line-height: 1.2em;
+	width: 300px;
+	padding: 0 0 5px 5px;
+	margin: 0 0 10px 0;
+	color: red
+}
+
+span:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136,183,213,0);
+	border-right-color:;
+	border-width: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px
+}
+
+input[type="submit"] {
+	background: #303663;
+	box-shadow: 0 3px 0 0 #5f6278;
+	border-radius: 5px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	line-height: 1.6em;
+	margin: 0;
+	outline: 0;
+	padding: .8em 0;
+	text-shadow: 0 1px #f4f7f7
+}
+
+button[type="submit"] {
+	background: #0069d9;
+	box-shadow: 0 3px 0 0 #5f6278;
+	border-radius: 5px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1.6em;
+	margin-bottom: 1rem;
+	outline: 0;
+	text-shadow: 0 1px #f4f7f7
+}
+
+textarea {
+	border-radius: 5px;
+	display: inline;
+	text-align: left;
+	background:;
+	left:;
+	top:;
+	max-width: 600px;
+	height: 150px;
+	padding: 2px;
+	color: 333
+}
+
+select {
+	border-radius: 5px;
+	display: inline;
+	text-align: center;
+	background:;
+	left:;
+	top:;
+	max-width: 200px;
+	padding: 2px;
+	color: 333
+}
+
+@media(min-width:480px) {
+	select {
+		max-width: 400px
+	}
+}
