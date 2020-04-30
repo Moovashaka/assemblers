@@ -1,5 +1,24 @@
 import React, { useState } from 'react'
-import './slider.css'
+import styled from 'styled-components'
+
+const Sliders = styled.div`
+  position: relative;
+  top: 0;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+`
+const Slides = styled.div`
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+  align-items: center;
+  transition: 1.5s;
+  color: white;
+`
 
 function Slider() {
   let sliderArr = [<p>Very happy with the service<h3>Mrs Swindell, Ormskirk</h3></p>,
@@ -10,23 +29,20 @@ function Slider() {
   const [x, setX] = useState(0);
 
   const Slidein = () => {
-    console.log(x);
   x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
   };
   const slideTimer = setTimeout(() => { Slidein()}, 5000);
 
   return (
-    <div className="slider">
+    <Sliders>
       {sliderArr.map((item, index) => {
-
               return (
-          <div key={index}
-            className="slide" style={{transform:`translateX(${x}%)`}}>
-            {item}
-          </div>
+    <Slides key={index} style={{transform:`translateX(${x}%)`}}>
+    {item}
+    </Slides>
         );
       })}
-    </div>
+    </Sliders>
   )
 }
 export default Slider
