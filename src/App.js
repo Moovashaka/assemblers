@@ -57,11 +57,11 @@ function App () {
         />
         <Twitter />
        </Box>
-       <Jumbox bg="black">
+       <Box bg="black">
 
        <Form />
 
-       </Jumbox>
+       </Box>
       <Footer />
     </BrowserRouter>
   );

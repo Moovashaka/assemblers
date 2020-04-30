@@ -96,9 +96,7 @@ export default class ContactForm extends React.Component {
     return (
 
   <section id="contact">
-  <div className="contact">
-      <h3>Contact Us</h3>
-  </div>
+        <h3 className="header">Contact Us</h3>
   <div>
     <div className="map">
     <img src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&zoom=18&scale=1&size=600x300&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" />

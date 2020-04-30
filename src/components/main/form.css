@@ -1,21 +1,32 @@
 #contact {
 	display: flex;
+	position: relative;
+	width: 100%;
 	color: white;
 }
-.contact {
-	margin: 1em 1em;
+.header {
+	position: relative;
+	top: 0;
+	height: 3vh;
+ 	margin: 1em 1em;
 }
 
 .map {
 	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+	top: 5em;
+	left: -7em;
 	margin: 1em 1em;
 }
 
 .form {
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
 	background: #A1786C;
 	padding: 1em 1em;
 	max-width: 500px;
-	/* line-height: 10px */
 }
 
 .form-group {
