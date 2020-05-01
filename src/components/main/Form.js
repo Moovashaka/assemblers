@@ -140,11 +140,9 @@ export default class ContactForm extends React.Component {
         <div className="form-group">
           <select className="form-control" value={this.state.select} name="select" className="text-center" onChange={this.handleChange}>
             <option value="other">Something else</option>
-            <option value='tyres'>Tyres</option>
-            <option value="mot">MOT</option>
-            <option value="servicing">Servicing</option>
-            <option value="brakes">Brakes</option>
-            <option value="exhaust">Exhaust</option>
+            <option value='wardrobe'>Wardrobe</option>
+            <option value="bed">Bed</option>
+            <option value="chest">Chest of Drawers</option>
           </select>
         </div>
         <div className="form-group">
@@ -161,7 +159,7 @@ export default class ContactForm extends React.Component {
     </form>
     </div>
   </div>
-  
+
   </section>
 
     );

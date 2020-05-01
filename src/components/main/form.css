@@ -15,14 +15,12 @@
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
-	justify-content: flex-start;
-	margin: 1rem 0;
+	margin: 4rem 0;
 }
 
 .mapImage {
 	display: flex;
-	height: 55vh;
-	width: 45vw;
+	width: 50vmin;
 }
 
 .formSurround {
@@ -34,7 +32,6 @@
 	@media screen and (min-width:480px) {
 		 margin: -13em 0 0 25em;
 	}
-
 }
 
 .contactForm {
