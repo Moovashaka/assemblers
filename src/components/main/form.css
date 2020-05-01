@@ -15,26 +15,37 @@
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
-	top: 5em;
-	left: -7em;
-	margin: 1em 1em;
+	justify-content: flex-start;
+	top: 5rem;
+	margin: 1rem 2rem;
 }
 
 .mapImage {
 	display: flex;
-	height: 35vh;
-	width: 30vw;
+	height: 55vh;
+	width: 45vw;
+}
+
+.formSurround {
+	display: flex;
+	flex-flow: column nowrap;
+
+	padding: 3em 3em;
+
+	@media screen and (min-width:480px) {
+		 margin: -13em 0 0 25em; 
+	}
+
 }
 
 .contactForm {
-	display: block;
-	margin: -5em 0 2em 25rem;
-	background: #A1786C;
+	/* display: block; */
 	padding: 1em 1em;
-	max-width: 500px;
+	background: #A1786C;
 }
 
 .form-group {
+	display: flex;
 	padding: 1em 1em;
 }
 
@@ -42,7 +53,7 @@
 	margin-top: 2rem
 }
 
-p {
+/* p {
 	margin: 0;
 	position: relative
 }
@@ -146,10 +157,10 @@ select {
 	max-width: 200px;
 	padding: 2px;
 	color: 333
-}
+} */
 
-@media(min-width:480px) {
+/* @media(min-width:480px) {
 	select {
 		max-width: 400px
 	}
-}
+} */

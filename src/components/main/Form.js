@@ -99,15 +99,14 @@ export default class ContactForm extends React.Component {
         <h3 className="header">Contact Us</h3>
   <div>
     <div className="map">
-    <img className="mapImage" src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&size=600x300&zoom=18&scale=1&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" />
-  </div>
+    <iframe className="mapImage" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d302755.07458312873!2d-3.0037013935293686!3d53.64208603536602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b3ee6fcfe1f89%3A0x1ed6fb17951ed48c!2sMarlborough%20Rd%2C%20Southport%20PR9%200RA!5e0!3m2!1sen!2suk!4v1588347466793!5m2!1sen!2suk"/>
 
+        <div className="formSurround">
         <form className="contactForm" onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input type="hidden" name="form-name" value="contactForm" />
             <input
               value={this.state.inputName}
-              className="form-control"
               name="inputName"
               type="text"
               onChange={this.handleChange}
@@ -118,7 +117,6 @@ export default class ContactForm extends React.Component {
           <div className="form-group">
             <input
               value={this.state.inputEmail}
-              className="form-control"
               name="inputEmail" type="text"
               onChange={this.handleChange}
               placeholder="Email"
@@ -128,7 +126,6 @@ export default class ContactForm extends React.Component {
           <div className="form-group">
             <input
               value={this.state.inputPhone}
-              className="form-control"
               type="tel"
               name="inputPhone" type="tel"
               onChange={this.handleChange}
@@ -138,8 +135,7 @@ export default class ContactForm extends React.Component {
           <div className="form-group">
             <label>
               <i>Id like to enquire about:</i>
-              <br />
-              </label>
+            </label>
           </div>
         <div className="form-group">
           <select className="form-control" value={this.state.select} name="select" className="text-center" onChange={this.handleChange}>
@@ -154,7 +150,6 @@ export default class ContactForm extends React.Component {
         <div className="form-group">
           <textarea
             type="text" value={this.state.message}
-            className="form-control"
             name="message"
             onChange={this.handleChange}
             maxLength="200"
@@ -164,10 +159,8 @@ export default class ContactForm extends React.Component {
         <button className="text-center" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
         <span>{this.state.formSent}</span>
     </form>
-    <address>
-        <h3><i>TheAssemblers</i> Flatpack Furniture Assembly</h3>
-        <h3><a href="tel:+44-7305-474590">T: 07305 474590</a></h3>
-    </address>
+    </div>
+  </div>
   </div>
   </section>
 
