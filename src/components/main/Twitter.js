@@ -1,4 +1,13 @@
 import React, { useEffect } from 'react'
+import styled from 'styled-components'
+
+const Twitwrapper = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+  }
+`
 
 const TwitterContainer = () => {
   useEffect(() => {
@@ -16,9 +25,11 @@ const TwitterContainer = () => {
   }, []);
 
   return (
+    <Twitwrapper>
     <section className="twitterContainer">
       <div className="twitter-embed"></div>
     </section>
+    </Twitwrapper>
   );
 };
 
