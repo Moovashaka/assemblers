@@ -20,17 +20,22 @@
 	margin: 1em 1em;
 }
 
-.form {
+.mapImage {
 	display: flex;
-	flex-flow: column nowrap;
-	position: relative;
+	height: 35vh;
+	width: 30vw;
+}
+
+.contactForm {
+	display: block;
+	margin: -5em 0 2em 25rem;
 	background: #A1786C;
 	padding: 1em 1em;
 	max-width: 500px;
 }
 
 .form-group {
-	margin-top: 1rem
+	padding: 1em 1em;
 }
 
 .map-address {

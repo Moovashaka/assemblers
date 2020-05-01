@@ -99,10 +99,10 @@ export default class ContactForm extends React.Component {
         <h3 className="header">Contact Us</h3>
   <div>
     <div className="map">
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&zoom=18&scale=1&size=600x300&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" />
+    <img className="mapImage" src="https://maps.googleapis.com/maps/api/staticmap?center=stonebridge+mill+kestor+lane+longridge+lancashire&size=600x300&zoom=18&scale=1&maptype=roadmap&key=AIzaSyDP0xB9uhXm7e-L0rasGS3hLGCnRzDnYAk&format=png&visual_refresh=true" />
   </div>
 
-        <form name="contactForm" onSubmit={ this.handleSubmit }>
+        <form className="contactForm" onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input type="hidden" name="form-name" value="contactForm" />
             <input
@@ -114,9 +114,7 @@ export default class ContactForm extends React.Component {
               placeholder="Name"
               required />
           </div>
-          <br />
           <span>{this.state.inputNameError}</span>
-          <br />
           <div className="form-group">
             <input
               value={this.state.inputEmail}
@@ -125,10 +123,8 @@ export default class ContactForm extends React.Component {
               onChange={this.handleChange}
               placeholder="Email"
               required />
-            <br />
           </div>
           <span>{this.state.inputEmailError}</span>
-          <br />
           <div className="form-group">
             <input
               value={this.state.inputPhone}
@@ -138,7 +134,6 @@ export default class ContactForm extends React.Component {
               onChange={this.handleChange}
               placeholder="Phone"
               required />
-            <br />
           </div>
           <div className="form-group">
             <label>
@@ -156,8 +151,7 @@ export default class ContactForm extends React.Component {
             <option value="exhaust">Exhaust</option>
           </select>
         </div>
-          <br />
-          <div className="form-group">
+        <div className="form-group">
           <textarea
             type="text" value={this.state.message}
             className="form-control"
@@ -167,21 +161,15 @@ export default class ContactForm extends React.Component {
             placeholder="Message">
             </textarea>
         </div>
-        <br />
         <button className="text-center" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
-        <br />
         <span>{this.state.formSent}</span>
-        <br />
-        </form>
+    </form>
     <address>
-      <br />
         <h3><i>TheAssemblers</i> Flatpack Furniture Assembly</h3>
-      Stonebridge Mill, Kestor Lane, Longridge, Preston, Lancashire. PR3 3AD
-      <br />
-        <h3><a href="tel:+44-1772-784000">T: 01772 784000</a> F: 01772 784008</h3>
+        <h3><a href="tel:+44-7305-474590">T: 07305 474590</a></h3>
     </address>
   </div>
-    </section>
+  </section>
 
     );
   }
