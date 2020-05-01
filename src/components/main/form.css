@@ -16,8 +16,7 @@
 	flex-flow: column nowrap;
 	position: relative;
 	justify-content: flex-start;
-	top: 5rem;
-	margin: 1rem 2rem;
+	margin: 1rem 0;
 }
 
 .mapImage {
@@ -29,11 +28,11 @@
 .formSurround {
 	display: flex;
 	flex-flow: column nowrap;
-
-	padding: 3em 3em;
+	margin: 0 0 0 -7rem;
+	padding: 1em 1em;
 
 	@media screen and (min-width:480px) {
-		 margin: -13em 0 0 25em; 
+		 margin: -13em 0 0 25em;
 	}
 
 }
