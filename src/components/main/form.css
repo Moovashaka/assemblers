@@ -23,6 +23,12 @@
 	width: 70vmin;
 }
 
+@media screen and (min-width:480px) {
+	.mapImage {
+		width: 50vmax;
+	}
+}
+
 .formSurround {
 	display: flex;
 	flex-flow: column nowrap;
@@ -36,10 +42,23 @@
 	}
 }
 
+@media screen and (min-width:768px) {
+	.formSurround {
+		margin: -13rem 0 0 35rem;
+	}
+}
+
+@media screen and (min-width:1120px) {
+	.formSurround {
+		margin: -13rem 0 0 50rem;
+	}
+}
+
 
 .contactForm {
-	padding: 1em 1em;
 	background: #A1786C;
+	border-radius: 5px;
+	padding: 1em 1em;
 }
 
 .form-group {
