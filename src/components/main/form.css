@@ -15,24 +15,27 @@
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
-	margin: 4rem 0;
+	margin: 4rem -6rem;
 }
 
 .mapImage {
 	display: flex;
-	width: 50vmin;
+	width: 70vmin;
 }
 
 .formSurround {
 	display: flex;
 	flex-flow: column nowrap;
-	margin: 0 0 0 -7rem;
+	margin: 0 0 0 0rem;
 	padding: 1em 1em;
+}
 
 	@media screen and (min-width:480px) {
-		 margin: -13em 0 0 25em;
+		.formSurround {
+			margin: -13em 0 0 25em;
 	}
 }
+
 
 .contactForm {
 	padding: 1em 1em;
