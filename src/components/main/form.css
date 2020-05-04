@@ -13,9 +13,8 @@
 
 .map {
 	display: flex;
-	flex-flow: column nowrap;
 	position: relative;
-	margin: 4rem -6rem;
+	columns: 2;
 }
 
 .mapImage {
@@ -29,12 +28,10 @@
 	}
 }
 
-.formSurround {
+/* .formSurround {
 	display: flex;
-	flex-flow: column nowrap;
-	margin: 0 0 0 0rem;
 	padding: 1em 1em;
-}
+} */
 
 	@media screen and (min-width:480px) {
 		.formSurround {
