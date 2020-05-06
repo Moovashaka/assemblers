@@ -2,7 +2,7 @@ import React from 'react';
 import './form.css'
 
 
-export default class ContactForm extends React.Component {
+export default class Form extends React.Component {
   constructor(props) {
     super(props);
 
@@ -62,7 +62,7 @@ export default class ContactForm extends React.Component {
         fetch("client_mailer.php", {
           method: "POST",
           headers: {"content-type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contactForm", ...this.state })
+          body: encode({ "form-name": "Form", ...this.state })
         })
           .then(() => this.setState({formSent: 'Thank you for your enquiry, we will be in touch as soon as possible'}))
           .catch(error => alert(error));
@@ -157,9 +157,7 @@ export default class ContactForm extends React.Component {
         <span>{this.state.formSent}</span>
     </form>
   </div>
-
-  </section>
-
+</section>
     );
   }
 }

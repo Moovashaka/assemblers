@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from './components/navigation/Navbar.js'
 import Footer from './components/main/Footer.js'
 import Jumbox from './components/main/Jumbox.js'
@@ -15,7 +15,16 @@ import theme from './theme.js'
 import Twitter from './components/main/Twitter.js'
 
 
-function App () {
+class App extends Component {
+  state = {
+    fields: {}
+  };
+  onChange = updatedValue => {
+  this.setState({  fields: {
+    ...this.state.fields,
+    ...updatedValue }});
+}
+render() {
   return (
     <BrowserRouter>
         <Navbar />
@@ -59,12 +68,13 @@ function App () {
        </Box>
        <Box bg="black">
 
-       <Form />
+       <Form onChange={fields => this.onChange(fields)} />
 
        </Box>
       <Footer />
     </BrowserRouter>
   );
+}
 }
 
 export default App;

@@ -54,16 +54,7 @@
 	margin-top: 2rem
 }
 
-/* p {
-	margin: 0;
-	position: relative
-}
-
-label {
-	display: block
-}
-
-input[type="text"],input[type="password"] {
+/* input[type="text"],input[type="password"] {
 	background: #fffbfc;
 	border: 1px solid #e5e5e5;
 	padding: .8em .5em;
@@ -158,10 +149,10 @@ select {
 	max-width: 200px;
 	padding: 2px;
 	color: 333
-} */
+}
 
-/* @media(min-width:480px) {
+@media(min-width:480px) {
 	select {
 		max-width: 400px
 	}
-} */
+}  */
