@@ -148,7 +148,6 @@ export default class Form extends React.Component {
             name="message"
             onChange={this.handleChange}
             maxLength="200"
-            cols="30"
             placeholder="Your Message">
             </textarea>
         <div className="form-group">
