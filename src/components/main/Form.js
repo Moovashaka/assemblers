@@ -131,11 +131,9 @@ export default class Form extends React.Component {
               placeholder="Phone"
               required />
           </div>
-          <div className="form-group">
             <label>
               <i>Id like to enquire about:</i>
             </label>
-          </div>
         <div className="form-group">
           <select className="form-control" value={this.state.select} name="select" className="text-center" onChange={this.handleChange}>
             <option value="other">Something else</option>
@@ -144,17 +142,19 @@ export default class Form extends React.Component {
             <option value="chest">Chest of Drawers</option>
           </select>
         </div>
-        <div className="form-group">
-          <textarea
+        <textarea
+            id="textbox"
             type="text" value={this.state.message}
             name="message"
             onChange={this.handleChange}
             maxLength="200"
-            placeholder="Message">
+            cols="30"
+            placeholder="Your Message">
             </textarea>
+        <div className="form-group">
+        <button className="subbutton" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
         </div>
-        <button className="text-center" id="submit" type="submit" name="dataSubmit" disabled={this.state.lockSubmit}>Submit</button>
-        <span>{this.state.formSent}</span>
+      <span>{this.state.formSent}</span>
     </form>
   </div>
 </section>

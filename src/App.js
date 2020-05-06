@@ -67,9 +67,7 @@ render() {
         <Twitter />
        </Box>
        <Box bg="black">
-
        <Form onChange={fields => this.onChange(fields)} />
-
        </Box>
       <Footer />
     </BrowserRouter>
