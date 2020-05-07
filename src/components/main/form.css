@@ -34,7 +34,7 @@ span {
 
 @media screen and (min-width:480px) {
 	.mapImage {
-		max-width: 60vmax;
+		max-width: 80vw;
 	}
 }
 
@@ -68,5 +68,3 @@ span {
 	color: #fffbfc;
 	height: 8vh;
 }
-/* span{border-radius:5px;display:inline;text-align:center;line-height:1.2em;width:300px;padding:0 0 5px 5px;margin:0 0 10px 0;color:red}
-span:after{right:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(136,183,213,0);border-right-color:;border-width:8px;margin-top:8px;margin-bottom:8px} */

@@ -3,9 +3,11 @@ import styled from 'styled-components'
 
 const Twitwrapper = styled.div`
   display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 480px) {
     width: 90vw;
+
   }
 `
 
