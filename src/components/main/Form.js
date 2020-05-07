@@ -59,7 +59,7 @@ export default class Form extends React.Component {
           .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
           .join("&");
         }
-        fetch("client_mailer.php", {
+        fetch("/", {
           method: "POST",
           headers: {"content-type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "Form", ...this.state })
@@ -125,8 +125,8 @@ export default class Form extends React.Component {
           <div className="form-group">
             <input
               value={this.state.inputPhone}
+              name="inputPhone"
               type="tel"
-              name="inputPhone" type="tel"
               onChange={this.handleChange}
               placeholder="Phone"
               required />
@@ -135,7 +135,7 @@ export default class Form extends React.Component {
               <i>Id like to enquire about:</i>
             </label>
         <div className="form-group">
-          <select className="form-control" value={this.state.select} name="select" className="text-center" onChange={this.handleChange}>
+          <select className="form-control" value={this.state.select} name="select"  onChange={this.handleChange}>
             <option value="other">Something else</option>
             <option value='wardrobe'>Wardrobe</option>
             <option value="bed">Bed</option>
