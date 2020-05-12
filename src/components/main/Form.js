@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './form.css';
-import Map from './Map';
+
+const Map = React.lazy(() => import('./Map'));
 
 
 export default class Form extends React.Component {
@@ -99,7 +100,9 @@ export default class Form extends React.Component {
   <section id="contact">
         <h3 className="header">Contact Us</h3>
         <div className="map">
+        <Suspense fallback={<div>Loading...</div>}>
         <Map />
+        </Suspense>
         <form className="contactForm" onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input type="hidden" name="form-name" value="contactForm" />
