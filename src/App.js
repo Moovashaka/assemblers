@@ -44,7 +44,7 @@ render() {
         customer and are proud of the feedback we receive."
         morecontent=""
         />
-       <Cardtwo image={comp}
+       <Cardtwo
           title="Pricing &amp; Costs"
           text="We believe in a straightforward and fair
           pricing policy."
