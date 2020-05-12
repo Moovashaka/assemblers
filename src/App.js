@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Suspense,  Component } from 'react';
 import Navbar from './components/navigation/Navbar.js'
 import Footer from './components/main/Footer.js'
 import Jumbox from './components/main/Jumbox.js'
@@ -9,7 +9,8 @@ import Cardone from './components/content/Cardone.js'
 import Cardtwo from './components/content/Cardtwo.js'
 import comp from './images/computers.jpg'
 import theme from './theme.js'
-import Twitter from './components/main/Twitter.js'
+
+const Twitter = React.lazy(() => import('./components/main/Twitter.js'));
 
 
 class App extends Component {
@@ -61,7 +62,9 @@ render() {
           any discrepencies to your attention as soon as they come to light."
           phone="Telephone: 07305 474590 for a FREE and friendly estimate"
         />
+        <Suspense fallback={<div>Loading...</div>}>
         <Twitter />
+        </Suspense>
        </Box>
        <Box bg="black">
        <Form onChange={fields => this.onChange(fields)} />
