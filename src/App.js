@@ -6,9 +6,7 @@ import Box from './components/main/Box.js'
 import Form from './components/main/Form.js'
 import Card from './components/content/Card.js'
 import Cardone from './components/content/Cardone.js'
-import logo from './images/logo.svg'
-import table from './images/table.png'
-import sboard from './images/sideboard.png'
+import Cardtwo from './components/content/Cardtwo.js'
 import comp from './images/computers.jpg'
 import theme from './theme.js'
 import Twitter from './components/main/Twitter.js'
@@ -28,7 +26,7 @@ render() {
         <>
         <Navbar />
         <Box bg="black">
-        <Card image={table}
+        <Card
         title="FAQ"
         qonetitle="What if something is missing?"
         text=" Our fitters carry some of the more common spare parts,
@@ -40,13 +38,13 @@ render() {
         your needs. Our aim is to arrive within an hour
         of schedule, to facilitate overrunning and traffic."
         />
-       <Cardone image={sboard}
+       <Cardone
         title="Customer Feedback"
         content="We value your experience as our
         customer and are proud of the feedback we receive."
         morecontent=""
         />
-       <Card image={comp}
+       <Cardtwo image={comp}
           title="Pricing &amp; Costs"
           text="We believe in a straightforward and fair
           pricing policy."

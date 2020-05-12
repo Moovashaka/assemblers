@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import imgwebp from '../../images/table.webp'
+import img from '../../images/table.png'
 
 const Col = styled.div`
   display: flex;
@@ -93,6 +94,7 @@ color: #fff;
 margin: 0;
 padding: 5px;
 `;
+ /* global Modernizr */
 
 const Card = ({
   title,
@@ -112,7 +114,7 @@ const Card = ({
 }) => (
   <>
   <Col color={color} {...props} >
-  <Image src={image} alt={title} />
+  <Image src={(Modernizr.webp ? imgwebp : img)} alt={title} />
   <Title>{title}</Title>
   <QoneTitle>{qonetitle}</QoneTitle>
   <Text>{text}</Text>

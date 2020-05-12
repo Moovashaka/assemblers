@@ -4,7 +4,6 @@ import MobileNavbar from './MobileNavbar.js'
 import styled from 'styled-components'
 import Wrapper from './TopSection.js'
 import Topcard from '../content/Topcard.js'
-import banner from '../../images/banner1100x243.png'
 import Jumbox from '../main/Jumbox.js'
 
 const MyNavbar = styled.div`
@@ -51,7 +50,7 @@ class Navbar extends Component {
           toggleMobileNavbar = { this.toggleMobileNavbar } />
         <Wrapper>
             <Jumbox>
-            <Topcard image={banner}
+            <Topcard 
             title="Flatpack Assembly Service"
             text="Welcome to TheAssemblers, your first point of Contact
             for fast efficient Flatpack Furniture assembly. We take the grind out

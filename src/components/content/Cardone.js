@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Slider from './Slider.js'
-
+import imgwebp from '../../images/sideboard.webp'
+import img from '../../images/sideboard.png'
 
 const Col = styled.div`
   display: flex;
@@ -69,6 +70,7 @@ const MoreContent = styled.p`
   padding: 10px 5px;
   text-align: center;
 `;
+/* global Modernizr */
 
 const Cardone = ({
   title,
@@ -82,7 +84,7 @@ const Cardone = ({
 }) => (
   <>
   <Col color={color} {...props} >
-  <Image src={image} alt={title} />
+  <Image src={(Modernizr.webp ? imgwebp : img)} alt={title} />
   <Title>{title}</Title>
   <Slider></Slider>
   <Content>{content}</Content>
