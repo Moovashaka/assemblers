@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
+import img from '../../images/banner1100x243.png'
+import imgwebp from '../../images/banner1100x243.webp'
 
 const Col = styled.div`
   display: flex;
@@ -64,6 +66,8 @@ const Morecontent = styled.p`
   padding: 10px 5px;
   text-align: center;
 `;
+ /* global Modernizr */
+console.log(Modernizr);
 
 const Topcard = ({
   title,
@@ -78,7 +82,7 @@ const Topcard = ({
 }) => (
   <>
   <Col color={color} {...props} >
-  <Image src={image} alt={title} />
+  <Image src={(Modernizr.webp ? imgwebp : img)} alt={title} />
   <Title>{title}</Title>
   <Text>{text}</Text>
   <Content>{content}</Content>

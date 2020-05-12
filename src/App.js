@@ -6,7 +6,6 @@ import Box from './components/main/Box.js'
 import Form from './components/main/Form.js'
 import Card from './components/content/Card.js'
 import Cardone from './components/content/Cardone.js'
-import { BrowserRouter } from 'react-router-dom'
 import logo from './images/logo.svg'
 import table from './images/table.png'
 import sboard from './images/sideboard.png'
@@ -26,7 +25,7 @@ class App extends Component {
 }
 render() {
   return (
-    <BrowserRouter>
+        <>
         <Navbar />
         <Box bg="black">
         <Card image={table}
@@ -70,7 +69,8 @@ render() {
        <Form onChange={fields => this.onChange(fields)} />
        </Box>
       <Footer />
-    </BrowserRouter>
+      </>
+
   );
 }
 }
