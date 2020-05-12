@@ -8,9 +8,9 @@ const Col = styled.div`
   flex-flow: column wrap;
   border-radius: 10px;
   margin: 10px;
-  padding: 5vw 5vw;
+  padding: 5vw 1vw;
   background: ${ props => props.theme.colors.navaccent };
-  font-size: 1.5vw;
+  font-size: 1em;
 
   container::after {
     content: "";
@@ -22,6 +22,18 @@ const Col = styled.div`
 const Image = styled.img`
 height: 10vmax;
 text-align: center;
+
+@media screen and (max-width:768px) {
+width: 25vmax;
+height: 25vmax;
+margin: 0 0 0 30vw;
+}
+
+@media screen and (max-width:480px) {
+width: 15vmax;
+height: 15vmax;
+margin: 0 0 0 29vw;
+}
 `;
 
 const Title = styled.h3`
@@ -51,6 +63,19 @@ const Morecontent = styled.p`
   padding: 10px 5px;
   text-align: center;
 `;
+const EvenMorecontent = styled.p`
+  color: white;
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+`;
+
+const Phone = styled.h4`
+color: #fff;
+margin: 0;
+padding: 5px;
+`;
+
 /* global Modernizr */
 
 const Cardtwo = ({
@@ -59,6 +84,8 @@ const Cardtwo = ({
   text,
   content,
   morecontent,
+  evenmorecontent,
+  phone,
   color,
   layout,
   space,
@@ -71,6 +98,8 @@ const Cardtwo = ({
   <Text>{text}</Text>
   <Content>{content}</Content>
   <Morecontent>{morecontent}</Morecontent>
+  <EvenMorecontent>{evenmorecontent}</EvenMorecontent>
+  <Phone>{phone}</Phone>
   </Col>
   </>
 );
