@@ -1,14 +1,12 @@
 import React, { Suspense,  Component } from 'react';
 import Navbar from './components/navigation/Navbar.js'
 import Footer from './components/main/Footer.js'
-import Jumbox from './components/main/Jumbox.js'
 import Box from './components/main/Box.js'
 import Form from './components/main/Form.js'
 import Card from './components/content/Card.js'
 import Cardone from './components/content/Cardone.js'
 import Cardtwo from './components/content/Cardtwo.js'
-import comp from './images/computers.jpg'
-import theme from './theme.js'
+
 
 const Twitter = React.lazy(() => import('./components/main/Twitter.js'));
 

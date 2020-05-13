@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import img from '../../images/banner1100x243.png'
 import imgwebp from '../../images/banner1100x243.webp'
@@ -60,14 +60,7 @@ const Content = styled.p`
   text-align: center;
 `;
 
-const Morecontent = styled.p`
-  color: white;
-  margin: 0;
-  padding: 10px 5px;
-  text-align: center;
-`;
  /* global Modernizr */
-console.log(Modernizr);
 
 const Topcard = ({
   title,
