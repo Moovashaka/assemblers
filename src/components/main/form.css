@@ -15,7 +15,6 @@ span {
 	position: relative;
 	width: 100%;
 	color: white;
-
 }
 .header {
 	position: relative;
@@ -36,26 +35,35 @@ span {
 	padding: 2rem 2rem;
 	max-width: 70vw;
 }
+@media screen and (min-width: 480px) {
+ .mapImage {
+	 margin-left: auto;
+ }
+}
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 480px) {
 	.map {
-		display: flex;
+		columns: 2;
 	}
 }
 
 .contactForm {
 	background: #A1786C;
-	border-radius: 5px;
-	padding: 1rem 2rem;
+	border-radius: 10px;
 	margin: auto;
-	max-width: 60vw;
+  padding: 1rem 2rem;
+  width: 15rem;
+}
+@media screen and (min-width: 480px) {
+ .contactForm {
+	 margin-right: auto;
+ }
 }
 
 .form-group {
-	display: flex;
 	border-radius: 5px;
 	padding: 1em 1em;
-	width: 10rem;
+	/* width: 10rem; */
 }
 
 .map-address {

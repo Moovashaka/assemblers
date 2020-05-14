@@ -137,7 +137,7 @@ export default class Form extends React.Component {
               <i>Id like to enquire about:</i>
             </label>
         <div className="form-group">
-          <select className="form-control" value={this.state.select} name="select"  onChange={this.handleChange}>
+          <select value={this.state.select} name="select"  onChange={this.handleChange}>
             <option value="other">Something else</option>
             <option value='wardrobe'>Wardrobe</option>
             <option value="bed">Bed</option>
@@ -145,6 +145,7 @@ export default class Form extends React.Component {
           </select>
         </div>
         <textarea
+            className="form-group"
             id="textbox"
             type="text" value={this.state.message}
             name="message"
