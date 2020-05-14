@@ -1,8 +1,4 @@
-#contact {
-	position: relative;
-	width: 100%;
-	color: white;
-}
+
 #textbox {
 	height: 10vh;
 	padding: 1rem 1rem;
@@ -13,6 +9,12 @@
 span {
 	color: #c41111;
 	max-width: 70vw;
+}
+
+.contact {
+	position: relative;
+	width: 100%;
+	color: white;
 
 }
 .header {
@@ -31,14 +33,8 @@ span {
 	display: flex;
 	border: none;
 	margin: auto;
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 	max-width: 70vw;
-}
-
-@media screen and (min-width:480px) {
-	.mapImage {
-		max-width: 80vw;
-	}
 }
 
 @media screen and (min-width: 768px) {
@@ -50,9 +46,9 @@ span {
 .contactForm {
 	background: #A1786C;
 	border-radius: 5px;
-	padding: 1rem 1rem;
+	padding: 1rem 2rem;
 	margin: auto;
-	max-width: 70vw;
+	max-width: 60vw;
 }
 
 .form-group {

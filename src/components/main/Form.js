@@ -97,6 +97,7 @@ export default class Form extends React.Component {
     return (
 
   <section id="contact">
+    <div className="contact">
         <h3 className="header">Contact Us</h3>
         <div className="map">
         <Suspense fallback={<div>Loading...</div>}>
@@ -157,6 +158,7 @@ export default class Form extends React.Component {
       <span>{this.state.formSent}</span>
     </form>
   </div>
+</div>
 </section>
     );
   }
