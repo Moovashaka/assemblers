@@ -78,8 +78,8 @@ export default class Form extends React.Component {
           inputPhone: '',
           select: '',
           message: ''
-
         });
+
         this.props.onChange({
         inputName: '',
         inputNameError: '',
@@ -88,7 +88,6 @@ export default class Form extends React.Component {
         inputPhone: '',
         select: '',
         message: ''
-
         });
        const clearMessageTimer = setTimeout(() => { this.setState({ formSent: '' })}, 10000);
       }
