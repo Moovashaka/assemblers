@@ -30,6 +30,7 @@ span {
 
 .mapImage {
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	border: none;
 	margin: auto;
@@ -51,6 +52,7 @@ span {
 
 .formSurround {
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content:center;
   padding: 2em;
 }
