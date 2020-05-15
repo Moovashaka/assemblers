@@ -1,7 +1,7 @@
 import React from 'react';
 import './form.css'
-import img from '../../images/nwmap450x322.jpg'
-import imgwebp from '../../images/nwmap450x322.webp'
+import img from '../../images/nwmap350x250.jpg'
+import imgwebp from '../../images/nwmap350x250.webp'
 
 
 
