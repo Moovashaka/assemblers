@@ -25,7 +25,7 @@ span {
 
 .map {
 	position: relative;
-	padding: 0 0 2rem 0;
+	padding: 0 0 2rem 0;	
 }
 
 .mapImage {
@@ -34,7 +34,7 @@ span {
 	border: none;
 	margin: auto;
 	padding: 2rem 2rem;
-	max-width: 40vw;
+
 }
  @media screen and (min-width: 480px) {
  .mapImage {
