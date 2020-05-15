@@ -30,7 +30,6 @@ span {
 
 .mapImage {
 	display: flex;
-	flex-flow: column nowrap;
 	justify-content: center;
 	border: none;
 	margin: auto;
@@ -40,6 +39,7 @@ span {
  @media screen and (min-width: 480px) {
  .mapImage {
 	 display: flex;
+	 flex-flow: column nowrap;
 	 margin-left: auto;
  }
 }
@@ -52,7 +52,6 @@ span {
 
 .formSurround {
 	display: flex;
-	flex-flow: column nowrap;
 	justify-content:center;
   padding: 2em;
 }
@@ -65,6 +64,7 @@ span {
 }
 @media screen and (min-width: 768px) {
  .formSurround {
+	 flex-flow: column nowrap;
 	 margin: auto;
  }
 }
