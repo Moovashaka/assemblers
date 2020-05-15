@@ -30,10 +30,11 @@ span {
 
 .mapImage {
 	display: flex;
+	justify-content: center;
 	border: none;
 	margin: auto;
 	padding: 2rem 2rem;
-	max-width: 70vw;
+	max-width: 50vw;
 }
  @media screen and (min-width: 480px) {
  .mapImage {
