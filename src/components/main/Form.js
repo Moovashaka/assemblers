@@ -103,6 +103,8 @@ export default class Form extends React.Component {
         <Suspense fallback={<div>Loading...</div>}>
         <Map />
         </Suspense>
+        </div>
+        <div className="formSurround">
         <form className="contactForm" onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input type="hidden" name="form-name" value="contactForm" />
@@ -158,8 +160,8 @@ export default class Form extends React.Component {
         </div>
       <span>{this.state.formSent}</span>
     </form>
+    </div>
   </div>
-</div>
 </section>
     );
   }
