@@ -24,7 +24,7 @@ render() {
   return (
         <>
         <Navbar />
-        <Box bg="black">
+        <Box id="feedback" bg="black">
         <Card
         title="FAQ"
         qonetitle="What if something is missing?"

@@ -50,7 +50,7 @@ class Navbar extends Component {
           toggleMobileNavbar = { this.toggleMobileNavbar } />
         <Wrapper>
             <Jumbox>
-            <Topcard 
+            <Topcard id="about"
             title="Flatpack Assembly Service"
             text="Welcome to TheAssemblers, your first point of Contact
             for fast efficient Flatpack Furniture assembly. We take the grind out
